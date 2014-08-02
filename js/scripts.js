@@ -9,16 +9,16 @@ function redirectPage() {
   }
 
 $(document).ready(function() {
-  $(".blurb").hide();
-  $(".name-link").click(function() {
-    $(".blurb").slideToggle(600, "swing");
+  $(".b").hide();
+  $("span.n").click(function() {
+    $(".b").slideToggle(800, "swing");
   });
 });
 
 $(document).ready(function() {
   $("body").css("display","none");
   $("body").fadeIn(2000);
-  $("a.expandrew").click(function(event){
+  $("a").click(function(event){
     event.preventDefault();
     linkLocation = this.href;
     $("body").fadeOut(800, redirectPage);
