@@ -10,6 +10,15 @@ function redirectPage() {
 
 $(document).ready(function() {
   $(".b").hide();
+  $(".a").hover(function() {
+    if ($(".b").css('display') === "none") {
+      $(".b").delay(300).slideToggle(800, "swing");
+    };
+  });
+});
+
+$(document).ready(function() {
+  $(".b").hide();
   $("span.n").click(function() {
     $(".b").slideToggle(800, "swing");
   });
