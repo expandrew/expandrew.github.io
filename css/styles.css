@@ -27,6 +27,10 @@ a.e-l {
   transform:scale(.95,1); 
   -webkit-transform:scale(.95,1); 
 }
+/*no-underline links*/
+a.no {
+  text-decoration:none;
+}
 
 /*name*/
 span.n {
@@ -88,7 +92,7 @@ div.b {
   z-index: 3;
   position: absolute;
   width: 600px;
-  padding: 0px 0px 0px 20px;
+  padding: 0px 10px 0px 20px;
   background-color: #eee;
   border-radius: 10px;
 }
