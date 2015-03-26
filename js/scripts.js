@@ -22,9 +22,7 @@ $(document).ready(function() {
 
   // Blurb Toggle
   $(".show-b").click(function() {
-    if ($(".b").css('display') === "none") {
-      $(".b").slideToggle(800, "swing");
-    };
+    $(".b").slideToggle(800, "swing");
   });
 });
 
