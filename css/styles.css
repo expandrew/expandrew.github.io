@@ -18,6 +18,9 @@ a:hover {
   color:#f1553a;
   cursor:pointer;
 }
+.show-b:hover{
+  cursor: pointer;
+}
 
 /*expandrew-link*/
 a.e-l { 

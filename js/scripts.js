@@ -12,18 +12,19 @@ $(document).ready(function() {
   $("body").css("display","none");
   $("body").fadeIn(2000);
   $(".b").hide();
+
+  // Fade out when leaving site
   $("a").click(function(event){
     event.preventDefault();
     linkLocation = this.href;
     $("body").fadeOut(800, redirectPage);
   });
-  $(".a").hover(function() {
+
+  // Blurb Toggle
+  $(".show-b").click(function() {
     if ($(".b").css('display') === "none") {
-      $(".b").delay(300).slideToggle(800, "swing");
+      $(".b").slideToggle(800, "swing");
     };
-  });
-  $("span.n").click(function() {
-    $(".b").slideToggle(800, "swing");
   });
 });
 
