@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
   <head>
-    <title>andrewwestling.com</title>
-    <script src="js/jquery-1.11.1.min.js"></script>
-    <script src="js/scripts.js" type="text/javascript"></script>
-    <script type="text/javascript">preload(['img/a.png'])</script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Andrew Westling</title>
 
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -15,46 +14,58 @@
 
       ga('create', 'UA-53388698-1', 'auto');
       ga('send', 'pageview');
-
     </script>
 
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/styles.css" type="text/css">
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Ubuntu:300,700" type="text/css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Ubuntu:300,700">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
   </head>
 
   <body>
-
-    <div class="a show-b"></div>
-    <div class="n"><span class="n show-b">Andrew Westling</span><div>
-    <div class="b" id="b">
-
-      <p>
-        I'm a web developer in New York City.
-      </p>
-      <p>
-        In 2014, I earned a degree in architecture from <a href="http://architecture.uoregon.edu/">UO A&AA</a>.
-      </p>
-
-      <p>
-        Right now, I'm a junior developer at <a href="http://www.architizer.com">Architizer</a>.
-      </p>
-
-      <p>
-        I share on <a class="e-l" href="http://expandrew.com">expandrew</a>.
-      </p>
-
-      <p>
-        You can contact me via <a href="mailto:a@andrewwestling.com">email</a> or <a href="http://twitter.com/andwest">Twitter</a>, or
-        connect with me on <a href="http://linkedin.com/in/andrewwestling">LinkedIn</a>.
-      </p>
-
+    <div class="site-wrapper">
+      <div class="site-wrapper-inner">
+        <div class="cover-container">
+          <div class="inner cover">
+            <p><img class="a" src="img/a.png"></p>
+            <h1 class="cover-heading">I'm Andrew Westling.</h1>
+            <p class="lead">I'm a software engineer in New York City.</p>
+            <p class="lead">I work at <a href="http://architizer.com">Architizer</a>.</p>
+            <p class="lead link-icons">
+              <a href="https://github.com/expandrew" title="GitHub"><i class="fa fa-github-square"></i></a>
+              <a href="https://twitter.com/andwest" title="Twitter"><i class="fa fa-twitter-square"></i></a>
+              <a href="https://linkedin.com/in/andrewwestling" title="LinkedIn"><i class="fa fa-linkedin-square"></i></a>
+              <a href="https://expandrew.tumblr.com" title="Tumblr"><i class="fa fa-tumblr-square"></i></a>
+              <a href="https://www.last.fm/user/andwest" title="Last.fm"><i class="fa fa-lastfm-square"></i></i></a>
+              <a href="https://open.spotify.com/user/1283883" title="Spotify"><i class="fa fa-spotify"></i></a>
+            </p>
+            <p class="lead">
+              <a href="#" class="btn btn-lg btn-default">Say hello</a>
+            </p>
+          </div>
+          <div class="footer">
+            <div class="inner">
+              <p><a href="mailto:a@andrewwestling.com" title="Email me">a@andrewwestling.com</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <div>
-      <span class="e"><a href="mailto:a@andrewwestling.com">a@andrewwestling.com</a></span>
-    </div>
-
+    <!-- Scripts -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/scripts.js"></script>
   </body>
-
 </html>

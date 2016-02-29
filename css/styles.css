@@ -1,101 +1,203 @@
-body {
-  background-color: #fff;
-}
-p {
-  font-family: 'Ubuntu', sans-serif;
-  color:#000;
-  font-size: 16px;
-  font-weight: 300;
-/*  letter-spacing: -.025em;
-  transform:scale(.95,1); 
-  -webkit-transform:scale(.95,1); */
-}
-a {
-  color: #000;
-  font-weight:300;
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus {
+  color: #fff;
+  -webkit-transition: color 500ms ease;
+  -moz-transition: color 500ms ease;
+  -o-transition: color 500ms ease;
+  transition: color 500ms ease;
 }
 a:hover {
-  color:#f1553a;
-  cursor:pointer;
+  color: #eee;
+  -webkit-transition: color 500ms ease;
+  -moz-transition: color 500ms ease;
+  -o-transition: color 500ms ease;
+  transition: color 500ms ease;
 }
-.show-b:hover{
-  cursor: pointer;
+p.lead > a:hover {
+  text-decoration: none; /* no underline */
+}
+/* Make link icons bigger (larger touch targets) on small screens */
+p.link-icons > a {
+  font-size: 36px;
+}
+@media (min-width: 768px) {
+  p.link-icons > a {
+    font-size: 24px;
+  }
 }
 
-/*expandrew-link*/
-a.e-l { 
-  font-weight:700;
-  text-decoration:none; 
-  letter-spacing:-.050em;
-  transform:scale(.95,1); 
-  -webkit-transform:scale(.95,1); 
+
+/* Custom default button */
+.btn-default {
+  color: #999;
+  text-shadow: none; /* Prevent inheritence from `body` */
+  background-color: #fff;
+  border: 1px solid #fff;
+  -webkit-transition: background-color 300ms ease, border 300ms ease, color 300ms ease;
+  -moz-transition: background-color 300ms ease, border 300ms ease, color 300ms ease;
+  -o-transition: background-color 300ms ease, border 300ms ease, color 300ms ease;
+  transition: background-color 300ms ease, border 300ms ease, color 300ms ease;
 }
-/*no-underline links*/
-a.no {
-  text-decoration:none;
+.btn-default:hover {
+  -webkit-transition: background-color 300ms ease, border 300ms ease, color 300ms ease;
+  -moz-transition: background-color 300ms ease, border 300ms ease, color 300ms ease;
+  -o-transition: background-color 300ms ease, border 300ms ease, color 300ms ease;
+  transition: background-color 300ms ease, border 300ms ease, color 300ms ease;
+  background-color: #F1553A;
+  color: #fff;
+  border: 1px solid #F1553A;
+}
+.btn-default:active,
+.btn-default:focus {
+  -webkit-transition: background-color 300ms ease, border 300ms ease, color 300ms ease;
+  -moz-transition: background-color 300ms ease, border 300ms ease, color 300ms ease;
+  -o-transition: background-color 300ms ease, border 300ms ease, color 300ms ease;
+  transition: background-color 300ms ease, border 300ms ease, color 300ms ease;
+  background-color: #FE593D;
+  color: #fff;
+  border: 1px solid #FE593D;
+}
+.btn-default:active:focus {
+  -webkit-transition: background-color 300ms ease, border 300ms ease, color 300ms ease;
+  -moz-transition: background-color 300ms ease, border 300ms ease, color 300ms ease;
+  -o-transition: background-color 300ms ease, border 300ms ease, color 300ms ease;
+  transition: background-color 300ms ease, border 300ms ease, color 300ms ease;
+  background-color: #D74C34;
+  color: #fff;
+  border: 1px solid #D74C34;
 }
 
-/*name*/
-span.n {
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 24px;
-  font-weight: 700;
-  display:inline-block;
-  letter-spacing: -.050em;
-  transform:scale(.95,1); 
-  -webkit-transform:scale(.95,1); 
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  background-color: #fff;
 }
-/*name*/
-span.n:hover {
-  color:#f1553a;
-  cursor:pointer;
-}
-/*email-link*/
-span.e {
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 14px;
+body {
+  font-family: 'Ubuntu', 'Helvetica', sans-serif;
   font-weight: 300;
-  display:inline-block;
-  letter-spacing: -.015em;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+  -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+          box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+  background-color: #bbb;
+}
+.site-wrapper.white {
+  -webkit-transition: background-color 2000ms ease, opacity 2000ms ease;
+  -moz-transition: background-color 2000ms ease, opacity 2000ms ease;
+  -o-transition: background-color 2000ms ease, opacity 2000ms ease;
+  transition: background-color 2000ms ease, opacity 2000ms ease;
+  background-color: #fff;
+  opacity: 0;
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Padding for spacing */
+.inner {
+  padding: 30px;
+}
+
+/*
+ * Cover
+ */
+
+.cover {
+  padding: 0 20px;
+}
+.cover .btn-lg {
+  padding: 10px 20px;
+  font-weight: bold;
+}
+.cover-heading {
+  font-weight: 700;
+  letter-spacing: -.025em;
   transform:scale(.95,1); 
   -webkit-transform:scale(.95,1); 
 }
-/*a-logo*/
-div.a {
-  z-index: 1;
-  position: absolute;
-  left: 30px;
-  top: 30px;
-  width: 200px;
-  height: 200px;
-  background-image: url('../img/a.png');
-  background-repeat: no-repeat;
+.a {
+  margin-top: 10px;
   border-radius: 10px;
 }
-/*name*/
-div.n {
-  z-index: 2;
-  position: absolute;
-  left: 260px;
-  top: 115px;
-  width: 250px;
-  height: 30px;
-}
-/*email*/
-div.e {
-  position: absolute;
-  left: 260px;
-  top: 145px;
-  width: 250px;
-  height: 15px; 
+@media (min-width: 768px) {
+  .a {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+  }
 }
 
-/*blurb*/
-div.b {
-  z-index: 3;
-  position: absolute;
-  width: 600px;
-  padding: 0px 10px 0px 20px;
-  background-color: #eee;
-  border-radius: 10px;
+/*
+ * Footer
+ */
+
+.footer,
+.footer a {
+  color: #222; /* IE8 proofing */
+  color: rgba(255,255,255,.8);
+}
+.footer a:hover {
+  color: #fff;
+}
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 768px) {
+  /* Pull out the header and footer */
+  .footer {
+    position: fixed;
+    bottom: 0;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .footer,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (min-width: 992px) {
+  .footer,
+  .cover-container {
+    width: 700px;
+  }
+}
+
+@media (min-height: 601px) {
+  .footer {
+    display: block;
+  }
+}
+@media (max-height: 600px) {
+  .footer {
+    display: none;
+  }
 }
