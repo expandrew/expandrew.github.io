@@ -3,8 +3,8 @@ function redirectPage() {
 }
 
 $(document).ready(function() {
-  $("body").css("display","none");
-  $("body").fadeIn(2000);
+  $("body").css("opacity", "0");
+  $("body").animate({opacity: 1}, 2000)
 
   // Fade out when leaving site
   $("a").click(function(event){
