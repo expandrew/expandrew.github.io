@@ -5,18 +5,18 @@
 /* Links */
 a,
 a:focus {
-  color: #fff;
-  -webkit-transition: color 500ms ease;
-  -moz-transition: color 500ms ease;
-  -o-transition: color 500ms ease;
-  transition: color 500ms ease;
+  color: #000;
+  -webkit-transition: color 300ms ease;
+  -moz-transition: color 300ms ease;
+  -o-transition: color 300ms ease;
+  transition: color 300ms ease;
 }
 a:hover {
-  color: #eee;
-  -webkit-transition: color 500ms ease;
-  -moz-transition: color 500ms ease;
-  -o-transition: color 500ms ease;
-  transition: color 500ms ease;
+  color: #F1553A;
+  -webkit-transition: color 300ms ease;
+  -moz-transition: color 300ms ease;
+  -o-transition: color 300ms ease;
+  transition: color 300ms ease;
 }
 p.lead > a:hover {
   text-decoration: none; /* no underline */
@@ -34,10 +34,10 @@ p.link-icons > a {
 
 /* Custom default button */
 .btn-default {
-  color: #999;
+  color: #fff;
   text-shadow: none; /* Prevent inheritence from `body` */
-  background-color: #fff;
-  border: 1px solid #fff;
+  background-color: #000;
+  border: 1px solid #000;
   -webkit-transition: background-color 300ms ease, border 300ms ease, color 300ms ease;
   -moz-transition: background-color 300ms ease, border 300ms ease, color 300ms ease;
   -o-transition: background-color 300ms ease, border 300ms ease, color 300ms ease;
@@ -84,9 +84,8 @@ body {
 body {
   font-family: 'Ubuntu', 'Helvetica', sans-serif;
   font-weight: 300;
-  color: #fff;
+  color: #000;
   text-align: center;
-  text-shadow: 0 1px 3px rgba(0,0,0,.5);
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -95,25 +94,11 @@ body {
   width: 100%;
   height: 100%; /* For at least Firefox */
   min-height: 100%;
-  -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
-          box-shadow: inset 0 0 100px rgba(0,0,0,.5);
-  background-color: #bbb;
 }
-.site-wrapper.white {
-  -webkit-transition: background-color 2000ms ease, opacity 2000ms ease;
-  -moz-transition: background-color 2000ms ease, opacity 2000ms ease;
-  -o-transition: background-color 2000ms ease, opacity 2000ms ease;
-  transition: background-color 2000ms ease, opacity 2000ms ease;
-  background-color: #fff;
-  opacity: 0;
-}
+
 .site-wrapper-inner {
   display: table-cell;
   vertical-align: top;
-}
-.cover-container {
-  margin-right: auto;
-  margin-left: auto;
 }
 
 /* Padding for spacing */
@@ -121,18 +106,11 @@ body {
   padding: 30px;
 }
 
-/*
- * Cover
- */
-
-.cover {
-  padding: 0 20px;
-}
-.cover .btn-lg {
+.btn-lg {
   padding: 10px 20px;
   font-weight: bold;
 }
-.cover-heading {
+.heading {
   font-weight: 700;
   letter-spacing: -.025em;
   transform:scale(.95,1); 
@@ -148,6 +126,7 @@ body {
 .lead {
   font-size: 15px;
 }
+
 /* Large */
 @media (min-width: 768px) {
   .a {
@@ -155,7 +134,7 @@ body {
     height: 100px;
     border-radius: 50px;
   }
-  .cover-heading {
+  .heading {
     font-size: 36px;
   }
   .lead {
@@ -191,15 +170,13 @@ body {
     vertical-align: middle;
   }
   /* Handle the widths */
-  .footer,
-  .cover-container {
+  .footer{
     width: 100%; /* Must be percentage or pixels for horizontal alignment */
   }
 }
 
 @media (min-width: 992px) {
-  .footer,
-  .cover-container {
+  .footer{
     width: 700px;
   }
 }
