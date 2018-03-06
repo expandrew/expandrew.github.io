@@ -12,4 +12,6 @@ theme: minima
 minima:
   date_format: "%Y%m%d"
 show_excerpts: true
+header_pages:
+  - about.md
 
