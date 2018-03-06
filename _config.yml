@@ -7,6 +7,14 @@ url: "http://andrewwestling.com"
 permalink: /post/:title
 google_analytics: UA-53388698-1
 
+
+twitter_username: andwest
+github_username:  expandrew
+instagram_username: expandrew
+linkedin_username: andrewwestling
+lastfm_username: andwest
+spotify_username: "1283883"
+
 markdown: kramdown
 theme: minima
 minima:
