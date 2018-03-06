@@ -9,7 +9,6 @@ url: "http://andrewwestling.com"
 permalink: /post/:title
 google_analytics: UA-53388698-1
 
-
 twitter_username: andwest
 github_username:  expandrew
 instagram_username: expandrew
@@ -25,3 +24,9 @@ show_excerpts: true
 header_pages:
   - about.md
 
+exclude:
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - Rakefile
+  - README.md
