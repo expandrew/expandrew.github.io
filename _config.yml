@@ -1,0 +1,33 @@
+title: andrewwestling.com
+author: Andrew M Westling
+location: Brooklyn, NY
+email: a@andrewwestling.com
+resume_link: "/assets/Andrew Westling Resume.pdf"
+description: Andrew M Westling is a software engineer in New York City.
+
+baseurl: ""
+url: "http://andrewwestling.com"
+permalink: /post/:title
+google_analytics: UA-53388698-1
+
+twitter_username: andwest
+github_username:  expandrew
+instagram_username: expandrew
+linkedin_username: andrewwestling
+lastfm_username: andwest
+spotify_username: "1283883"
+
+markdown: kramdown
+theme: minima
+minima:
+  date_format: "%Y%m%d"
+show_excerpts: true
+header_pages:
+  - about.md
+
+exclude:
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - Rakefile
+  - README.md
