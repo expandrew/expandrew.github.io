@@ -17,6 +17,8 @@ linkedin_username: andrewwestling
 lastfm_username: andwest
 spotify_username: "1283883"
 
+plugins:
+  - jekyll-seo-tag
 markdown: kramdown
 theme: minima
 minima:
