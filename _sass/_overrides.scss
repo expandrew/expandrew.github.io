@@ -1,3 +1,9 @@
+.site-title {
+  @include relative-font-size(1.125);
+  font-weight: 400;
+  letter-spacing: 0px;
+}
+
 svg.svg-icon {
   height: 16px;
   width: 16px;
