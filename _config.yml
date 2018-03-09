@@ -7,7 +7,7 @@ description: Andrew M Westling is a software engineer in New York City.
 
 baseurl: ""
 url: "http://andrewwestling.com"
-permalink: /post/:title
+permalink: /posts/:title
 google_analytics: UA-53388698-1
 
 twitter_username: andwest
