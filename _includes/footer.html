@@ -20,6 +20,12 @@
           {% if site.resume_link %}
           <li><a href="/{{ site.resume_link | escape }}">Resume</a></li>
           {% endif %}
+          {% for path in page_paths %}
+            {% assign my_page = site.pages | where: "path", path | first %}
+            {% if my_page.title %}
+            <a href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+            {% endif %}
+          {% endfor %}
         </ul>
       </div>
 
