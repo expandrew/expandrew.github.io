@@ -8,6 +8,8 @@ This is my "life stack," a collection of products and services I use in my daily
 
 This exists partially just so I can keep track of what I own, but it also may serve the interests of others who are curious about what I use and can recommend in my day-to-day life.
 
+{% include table-of-contents.html %}
+
 ## Computers
 ### **Apple MacBook (Retina, 12-inch, 2017)** laptop computer
 Primary home Mac. It is configure-to-order with 1.4GHz i7 and 16GB RAM. No hiccups yet. Amazing speaker for such a small machine.
