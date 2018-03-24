@@ -89,6 +89,12 @@ Google Maps Timeline is basically a passive proxy diary of my life. For the smal
 I have access to _all my photos ever_, on my phone. Also they're backed up. Who knows what Google will do with all this ML training data, though...
 
 ### Utilities
+
+#### **Yubico FIDO U2F** security key
+[![Yubico FIDO U2F Security Key](/assets/life-stack/yubico-fido-u2f-security-key.jpg)](https://www.yubico.com/products/yubikey-hardware/fido-u2f-security-key/){:target="_blank"}
+
+_Andy's First Security Token™_. I use one of these as an extra layer of authentication on important accounts. The only issue is the USB-A/USB-C limbo I'm in these days - [2015 MBP](#apple-macbook-pro-laptop-computer) for work, [2017 MacBook](#apple-macbook-laptop-computer) for home - means I need an adapter to use this device with my home MacBook.
+
 #### **Krypton**
 My SSH key lives on my phone, and I don't ever have to think about it again. Great.
 
@@ -102,7 +108,7 @@ I don't like that 1Password is pushing people to sign up for their subscription 
 [1password.com](https://1password.com/){:target="_blank"}
 
 #### **Gandi.net** domain registrar
-I can't even remember why Gandi is my domain registrar. It works well enough. I probably Googled "best domain registrar 2013" and these guys had the best SEO and reviews at the time. Domain registrars are weird.
+I can't even remember why I picked Gandi in the first place. One thing I recently discovered that sets them apart is that they support native multi-factor authentication with my [Yubico security key](#yubico-fido-u2f-security-key). [Recent UI updates](https://news.gandi.net/en/2017/08/gandiv5-ready-for-takeoff/) have also been a pleasant change.
 
 [gandi.net](https://gandi.net/){:target="_blank"}
 
