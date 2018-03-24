@@ -192,10 +192,6 @@ Personal Capital is just a nice dashboard for tracking your accounts and persona
 
 [personalcapital.com](https://www.talkable.com/x/0DdknM){:target="_blank"} (affiliate link, get $20)
 
-### **Coinbase**
-
-I started dabbling in cryptocurrency when Coinbase had that surge of popularity in the fall of 2017. It's just gambling right now. I believe in the promise of cryptocurrency as a new form of decentralized currency, but I'm not ready to "invest" more than I'm willing to lose. I also don't fuck with ICOs or "alt-coins."
-
 ### **Credit Karma**
 
 Just a way to keep track of my credit score. Supports Equifax and TransUnion.
@@ -428,6 +424,12 @@ I moved to [Charles Schwab](#charles-schwab-checking-account) because it's a rel
 ### **Openfolio**
 
 Openfolio used to be a dashboard for investment performance, coupled with a profiles feature that allowed you to compare your investment performance to others in similar demographics or age groups. You could, for instance, compare the performance of your investments against other _24-33 year olds working in the technology sector_. Then they kind of blew up their app, and pivoted the whole thing to be _just another account aggregator_. Shame. I stopped using Openfolio in favor of [Personal Capital](#personal-capital) in Fall 2017.
+
+### **Coinbase**
+
+I started dabbling in cryptocurrency when Coinbase had that surge of popularity in the fall of 2017. Basically, I _hedl_ (past tense for [_hodl_](https://en.wikipedia.org/wiki/Hodl)?) through the dips after the spike in early 2018, but I decided in the spring of 2018 to get out while I was still ahead so I just sold everything and decided to stop playing this game. It's just gambling right now.
+
+That said, I was impressed and inspired by the design/UI/overall "craft" of the product while I was using it.
 
 ### **BAM**
 
