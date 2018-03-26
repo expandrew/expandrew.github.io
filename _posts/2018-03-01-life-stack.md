@@ -313,6 +313,12 @@ I buy the extra large, plain, black, soft cover, 7.5" x 10".
 
 A gift from my company when we moved into an open office. I use these to focus at my desk at work. I'm sure there are "better" headphones but these are enough for me. Not super portable (hence desk)
 
+### **Jabra Move Wireless** headphones
+![Jabra Move Wireless headphones](/assets/life-stack/jabra-move-wireless-headphones.jpg)
+
+I use these while I commute and they're awesome. I found them on [Wirecutter](https://thewirecutter.com/reviews/best-bluetooth-headphones/){:target="_blank"}. These headphones can pair with multiple devices, and can also be plugged in and used as normal wired headphones. The controls are also very easy to use. Overall, thoughtful features and design, and they sound great for the price.
+
+
 ### **Minaal Carry On 2.0** travel backpack
 ![Minaal Carry On 2.0 travel backpack](/assets/life-stack/minaal-carry-on-20-travel-backpack.jpg)
 
@@ -393,6 +399,11 @@ I use these on my violin. They're synthetic, but they're really warm, and they s
 ![Swedish Dream Seaweed soap](/assets/life-stack/swedish-dream-seaweed-soap.jpg)
 
 Just some good soap. Received a bar of this stuff as a gift from a girlfriend. I'm sold forever now.
+
+### **Philips Norelco OneBlade** trimmer/shaver
+![Philips Norelco OneBlade trimmer and shaver](/assets/life-stack/philips-norelco-oneblade.jpg)
+
+Cheap and simple. The stubble combs work well. Small enough to bring along [when I travel](#minaal-carry-on-20-travel-backpack).
 
 ### **Black+Decker BDH2000PL** handheld vacuum cleaner
 ![Black+Decker BDH2000PL handheld vacuum cleaner](/assets/life-stack/black-and-decker-bdh2000pl-handheld-vacuum-cleaner.jpg)
