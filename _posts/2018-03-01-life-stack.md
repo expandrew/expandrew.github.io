@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Life Stack
+date: 2018-03-26
 
 ---
 
