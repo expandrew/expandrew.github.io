@@ -8,15 +8,16 @@ This is a living document of products and services I use in my daily life.
 
 I'm a product of my habits, and these are the products that enable my habits.
 
-
-{% include table-of-contents.html %}
-
 ## Overview
 This document exists partially for me and partially for you. It's for me to keep track of what I own and use, but it's also for you if you're curious about my consumer preferences and recommendations.
 
 This document is inspired by others who have created [similar](https://aaronparecki.com/life-stack/) [documents](http://anomalily.net/life-stack/).
 
+{% include table-of-contents.html %}
+
 ## Computers
+**TL;DR**: 
+- They're all Apple products.
 
 ### **Apple MacBook** laptop computer
 ([Retina, 12-inch, 2017](https://support.apple.com/kb/sp757){:target="_blank"})
@@ -61,6 +62,10 @@ Primary router. This thing has served me well since I bought it in 2013 as my fi
 
 
 ## Online Services
+**TL;DR**: 
+- I use a lot of Google products. 
+- I try to follow good security practices. 
+- I probably don't consume enough media content to justify some of my subscriptions.
 
 ### Google Products
 #### **G Suite** 
@@ -142,6 +147,11 @@ Basically, I bandwagoned and joined MoviePass when they lowered their price. Obv
 
 
 ## Finance
+**TL;DR**:
+- I've thought a lot about these choices
+- I like online banks
+- I play the credit card rewards game
+
 ### Banking
 #### **Charles Schwab** checking account
 ![Charles Schwab checking account](/assets/life-stack/charles-schwab-checking-account.jpg)
@@ -216,6 +226,10 @@ Because renter's insurance is [probably a good idea](https://streeteasy.com/guid
 
 
 ## Memberships / Subscriptions
+**TL;DR**:
+- New York City has some incredible deals for "young people" to see classical music
+- Sometimes it makes sense to become a member if you're gonna go back again
+
 ### **Carnegie Hall** Notables Prelude membership
 ![Carnegie Hall Notables Prelude membership](/assets/life-stack/carnegie-hall-notables-prelude-membership.jpg)
 
@@ -277,6 +291,10 @@ Enabled by my company's commuter benefits program. The WageWorks website isn't g
 
 
 ## Other Items
+**TL;DR**:
+- I'm picky
+- I wish I could buy certain clothing items again after they wear out
+
 ### **Lamy Safari** fountain pen
 ![Lamy Safari fountain pen](/assets/life-stack/lamy-safari-fountain-pen.jpg)
 
