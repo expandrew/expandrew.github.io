@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Life Stack
-date: 2018-03-26
+date: 2018-04-10
 
 ---
 
@@ -100,6 +100,11 @@ I have access to _all my photos ever_, on my phone. Also they're backed up. Who 
 [![Yubico FIDO U2F Security Key](/assets/life-stack/yubico-fido-u2f-security-key.jpg)](https://www.yubico.com/products/yubikey-hardware/fido-u2f-security-key/){:target="_blank"}
 
 _Andy's First Security Token™_. I use one of these as an extra layer of authentication on important accounts. The only issue is the USB-A/USB-C limbo I'm in these days - [2015 MBP](#apple-macbook-pro-laptop-computer) for work, [2017 MacBook](#apple-macbook-laptop-computer) for home - means I need an adapter to use this device with my home MacBook.
+
+#### **Yubico Yubikey 4C** security key
+[![Yubico Yubikey 4C Security Key](/assets/life-stack/yubico-yubikey-4c-security-key.jpg)](https://www.yubico.com/product/yubikey-4-series/#yubikey-4c){:target="_blank"}
+
+I bought this after buying the [FIDO U2F key](#yubico-fido-u2f-security-key) above. I use it with my [2017 MacBook](#apple-macbook-laptop-computer). I haven't played much with the extra capabilities that the Yubikey 4 Series has over the FIDO U2F product. Also conflicted about which of these devices to carry with me at all times because they will both require an adapter in certain settings...
 
 #### **Krypton**
 My SSH key lives on my phone, and I don't ever have to think about it again. Great.
