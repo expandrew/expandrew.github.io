@@ -31,12 +31,12 @@ date: 20180429
   <!-- Greeting (Large) -->
   <section id="top" class="db-ns dn mb4 w-100-ns">
     <h1 class="f3 lh-title mb3 mt0">👋 Hi, I'm Andrew M Westling, a software engineer in <span class="dib">Brooklyn, NY.</span></h1>
-    <a class="b--gray ba black br2 dib f6 ph3 pv1" onclick="ga('send','event', 'Resume', 'download')" href="#">📄 Download as PDF</a>
+    <a class="b--gray ba black br2 dib f6 ph3 pv1" onclick="ga('send','event', 'Resume', 'download')" href="{{ "/assets/resume/andrew_westling_resume.pdf" | relative_url }}" target="_blank" download>📄 Download as PDF</a>
     <a class="b--gray ba black br2 dib f6 ph3 pv1" onclick="ga('send','event', 'Resume', 'print')" href="javascript:window.print()">🖨 Print this page</a>
   </section>
   <!-- Greeting (Small) -->
   <section id="contact-s" class="db dn-ns mb4 w-100-ns">
-    <a class="b--gray ba black br2 dib dn-p f6 mb4 ph3 pv2" onclick="ga('send','event', 'Resume', 'download')" href="#">📄 Download as PDF</a>
+    <a class="b--gray ba black br2 dib dn-p f6 mb4 ph3 pv2" onclick="ga('send','event', 'Resume', 'download')" href="{{ "/assets/resume/andrew_westling_resume.pdf" | relative_url }}" target="_blank" download>📄 Download as PDF</a>
     <div class="fl-p">
       <img class="dib-p dn" src="/assets/a.png" style="height: 48px; width: 48px; margin-right: 10px; border-radius: 50%;"/>
     </div>
