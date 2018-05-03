@@ -3,7 +3,7 @@ title: Resume
 footer: false
 layout: resume
 permalink: /resume/
-date: 20180429
+date: 20180503
 ---
 
 {::nomarkdown}
@@ -68,15 +68,15 @@ date: 20180429
       <!-- Education -->
       <div id="education" class="mb3 order-1-ns order-2">
         <h1 class="b f4 lh-title mb2 mt0">Education</h1>
-        <p><strong class="dib">Bachelor of Architecture,</strong> <span class="dib">University of Oregon, 2014</span></p>
+        <p><span class="dib">Bachelor of Architecture,</span> <span class="dib">University of Oregon, 2014</span></p>
       </div>
       <!-- Tools -->
       <div id="tools" class="mb3 order-2-ns order-1">
         <h1 class="b f4 lh-title mb2 mt0">Tools</h1>
         <p class="mb2"><strong>JavaScript</strong><br>ES6+, AngularJS, Next.js, React/Redux, Node.js, GraphQL, webpack, grunt/gulp, jQuery</p>
         <p class="mb2"><strong>UI</strong><br>Storybook, styled-components, HTML5/SCSS/CSS, Foundation, Bootstrap, Tachyons</p>
-        <p class="mb2"><strong>Testing</strong><br>Jest, Enzyme, Jasmine, Karma</p>
-        <p class="mb2"><strong>General</strong><br>Django, Docker, git, bash, Solr, <span class="dib">Amazon Web Services</span>, CircleCI, Heroku, Rails</p>
+        <p class="mb2"><strong>Testing</strong><br>Jest, Enzyme, Jasmine, Karma, Mocha, Chai</p>
+        <p class="mb2"><strong>General</strong><br>Django, Docker, nginx, Solr, Git, Bash, Amazon Web Services (AWS), Segment, CircleCI, Heroku, Rails</p>
       </div>
       <div id="date-updated" class="dn-p order-3">
         <p class="f7 light-gray">{{ page.date }}</p>
@@ -92,14 +92,14 @@ date: 20180429
           <span class="db f7 gray i lh-copy mt0">September 2015 – present, New York City</span>
         </div>
         <div class="f6 lh-copy mb3">
-          <p class="mb2">Full-stack feature development and infrastructure maintenance for Architizer’s marketplace for building-products.</p>
+          <p class="mb2">Full-stack/frontend-focused feature development and infrastructure maintenance for Architizer’s marketplace for building-products.</p>
           <ul class="lh-copy ml3">
-            <li>Migrated legacy front end to a modern stack <span class="dib f7 gray i">(React/Redux, Next.js)</span></li>
-            <li>Built a UI design / component system to speed up feature development <span class="dib f7 gray i">(React, Storybook, styled-components)</span></li>
-            <li>Built a messaging interface to enable communication on the marketplace <span class="dib f7 gray i">(AngularJS, SCSS, Django)</span></li>
-            <li>Built multiple interfaces to a Solr search index for architects to search for building-products and manufacturers <span class="dib f7 gray i">(React, AngularJS, Solr, Django Haystack)</span></li>
-            <li>Migrated a bespoke front-end JS framework into React to improve maintainability <span class="dib f7 gray i">(React, Django)</span></li>
-            <li>Improved infrastructure to reduce downtime risks and speed up deployment <span class="dib f7 gray i">(Node.js, CircleCI, AWS, Docker, gulp)</span></li>
+            <li>Led frontend efforts for large feature projects, including a private messaging interface, and directory interfaces to Solr search indexes <span class="dib f7 gray i">(AngularJS, SCSS, Django, Solr, Haystack)</span></li>
+            <li>Established and maintained a UI component system to facilitate faster feature development and improve collaboration with designers <span class="dib f7 gray i">(React, Next.js, Storybook, styled-components, SCSS)</span></li>
+            <li>Managed and extended integrations with external tools for analytics, error logging, marketing, and customer support <span class="dib f7 gray i">(Segment)</span></li>
+            <li>Optimized frontend infrastructure to speed up deployment and improve test coverage <span class="dib f7 gray i">(Node.js, CircleCI, AWS, Docker, gulp)</span></li>
+            <li>Assisted in infrastructure cleanup, including pruning AWS resources to reduce costs, and cleanly refactoring stale application code</li>
+            <li>Demonstrated technical leadership in onboarding new hires, code reviews, and promoting collaborative engineering culture</li>
           </ul>
         </div>
       </div>
@@ -124,7 +124,7 @@ date: 20180429
           <span class="db f7 gray i lh-copy mt0">July 2014 – October 2014, Portland, Oregon</span>
         </div>
         <div class="f6 lh-copy mb3">
-          <p class="mb2">Code school. Learned Ruby on Rails, JavaScript, and other web technologies.</p>
+          <p class="mb2">Code school. Learned Ruby on Rails, JavaScript, and other tools.</p>
           <ul class="lh-copy ml3">
             <li>Learned full-stack web development via test-driven development and daily pair programming</li>
             <li>Attained internship-to-hire with EyeCue Lab after Epicodus</li>
