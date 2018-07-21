@@ -3,7 +3,7 @@ title: Resume
 footer: false
 layout: resume
 permalink: /resume/
-date: 20180503
+date: 20180720
 ---
 
 {::nomarkdown}
@@ -85,21 +85,28 @@ date: 20180503
     <!-- Experience -->
     <section id="experience" class="fl-p flex flex-column flex-grow w-60-ns w-two-thirds-p">
       <h1 class="b f4 lh-title mb2 mt0">Experience</h1>
+      <!-- Better Mortgage -->
+      <div class="mb3">
+        <div class="mb2">
+          <span class="db f5 mt0 lh-title"><strong><a class="link underline"href="https://better.com" target="_blank">Better Mortgage</a></strong>, Front End Engineer</span>
+          <span class="db f7 gray i lh-copy mt0">July 2018 – present, New York City</span>
+        </div>
+      </div>
       <!-- Architizer -->
       <div class="mb3">
         <div class="mb2">
           <span class="db f5 mt0 lh-title"><strong><a class="link underline"href="https://architizer.com" target="_blank">Architizer</a></strong>, Software Engineer</span>
-          <span class="db f7 gray i lh-copy mt0">September 2015 – present, New York City</span>
+          <span class="db f7 gray i lh-copy mt0">September 2015 – June 2018, New York City</span>
         </div>
-        <div class="f6 lh-copy mb3">
-          <p class="mb2">Full-stack/frontend-focused feature development and infrastructure maintenance for Architizer’s marketplace for building-products.</p>
+        <div class="f7 lh-copy mb3">
+          <p class="mb2">Full-stack/front-end-focused feature development and infrastructure maintenance for Architizer’s platform to help architects find building products.</p>
           <ul class="lh-copy ml3">
-            <li>Led frontend efforts for large feature projects, including a private messaging interface, and directory interfaces to Solr search indexes <span class="dib f7 gray i">(AngularJS, SCSS, Django, Solr, Haystack)</span></li>
-            <li>Established and maintained a UI component system to facilitate faster feature development and improve collaboration with designers <span class="dib f7 gray i">(React, Next.js, Storybook, styled-components, SCSS)</span></li>
+            <li>Built large features, including a private messaging interface, and directory interfaces to Solr search indexes <span class="dib f7 gray i">(AngularJS, SCSS, Django, Solr, Haystack)</span></li>
+            <li>Established and maintained a UI component system to speed up feature development, and improve collaboration with designers <span class="dib f7 gray i">(React, Next.js, Storybook, styled-components, SCSS)</span></li>
             <li>Managed and extended integrations with external tools for analytics, error logging, marketing, and customer support <span class="dib f7 gray i">(Segment)</span></li>
             <li>Optimized frontend infrastructure to speed up deployment and improve test coverage <span class="dib f7 gray i">(Node.js, CircleCI, AWS, Docker, gulp)</span></li>
-            <li>Assisted in infrastructure cleanup, including pruning AWS resources to reduce costs, and cleanly refactoring stale application code</li>
-            <li>Demonstrated technical leadership in onboarding new hires, code reviews, and promoting collaborative engineering culture</li>
+            <li>Cleaned up infrastructure, pruned AWS resources to reduce costs, and refactored stale application code</li>
+            <li>Onboarded new hires, participated in code reviews, and promoted collaborative engineering culture</li>
           </ul>
         </div>
       </div>
@@ -109,7 +116,7 @@ date: 20180503
           <span class="db f5 mt0 lh-title"><strong><a class="link underline" href="http://eyecuelab.com/" target="_blank">EyeCue Lab</a></strong>, Software Engineer</span>
           <span class="db f7 gray i lh-copy mt0">October 2014 – August 2015, Portland, Oregon</span>
         </div>
-        <div class="f6 lh-copy mb3">
+        <div class="f7 lh-copy mb3">
           <p class="mb2">Internship-to-hire. Consultancy/agency setting.</p>
           <ul class="lh-copy ml3">
             <li>Built marketing pages and full-stack features for web applications and client projects <span class="dib f7 gray i">(Rails, AngularJS)</span></li>
@@ -123,7 +130,7 @@ date: 20180503
           <span class="db f5 mt0 lh-title"><strong><a class="link underline" href="https://epicodus.com/" target="_blank">Epicodus</a></strong>
           <span class="db f7 gray i lh-copy mt0">July 2014 – October 2014, Portland, Oregon</span>
         </div>
-        <div class="f6 lh-copy mb3">
+        <div class="f7 lh-copy mb3">
           <p class="mb2">Code school. Learned Ruby on Rails, JavaScript, and other tools.</p>
           <ul class="lh-copy ml3">
             <li>Learned full-stack web development via test-driven development and daily pair programming</li>
@@ -137,7 +144,7 @@ date: 20180503
           <span class="db f5 mt0 lh-title"><strong><a class="link underline" href="https://support.apple.com" target="_blank">Apple</a></strong>, AppleCare Advisor</span>
           <span class="db f7 gray i lh-copy mt0">June 2013 – May 2014, Eugene, Oregon</span>
         </div>
-        <div class="f6 lh-copy mb3">
+        <div class="f7 lh-copy mb3">
           <p class="mb2">Tier I technical support while completing my degree. Remote position.</p>
           <ul class="lh-copy ml3">
             <li>Provided technical phone support for macOS products, and customer service for Apple ID, fraud/billing, and account security</li>
