@@ -46,7 +46,7 @@ date: 20180720
     <div>
       <h1 class="f4 lh-title mb0-p mf3 mt0"><strong class="dib">Andrew M Westling</strong>, <span class="dib f5">Software Engineer</span></h1>
       <p class="lh-title mb0-p mf3 mt0">
-        <a class="black db dib-p link" onclick="ga('send','event', 'Resume', 'email')" href="mailto:a@andrewwestling.com" target="_blank">a@andrewwestling.com</a>
+        <a class="black db dib-p link" onclick="ga('send','event', 'Resume', 'email')" href="mailto:hi@andrewwestling.com" target="_blank">hi@andrewwestling.com</a>
         <span class="dib-p dn"> | </span>
         <a class="black db dib-p link" onclick="ga('send','event', 'Resume', 'phone')" href="tel:16468010105" target="_blank">+1 (646) 801-0105</a>
         <span class="dib-p dn"> | </span>
@@ -61,7 +61,7 @@ date: 20180720
       <div id="contact-ns" class="db-ns dn mb3">
         <h1 class="b f4 lh-title mb2 mt0">Say Hello</h1>
         <p class="lh-copy mt0-ns">
-          <a class="db link underline-hover" onclick="ga('send','event', 'Resume', 'email')" href="mailto:a@andrewwestling.com" target="_blank">a@andrewwestling.com</a>
+          <a class="db link underline-hover" onclick="ga('send','event', 'Resume', 'email')" href="mailto:hi@andrewwestling.com" target="_blank">hi@andrewwestling.com</a>
           <a class="db link underline-hover" onclick="ga('send','event', 'Resume', 'phone')" href="tel:16468010105" target="_blank">+1 (646) 801-0105</a>
         </p>
       </div>
