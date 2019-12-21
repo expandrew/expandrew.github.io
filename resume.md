@@ -3,7 +3,7 @@ title: Resume
 footer: false
 layout: resume
 permalink: /resume/
-date: 20180720
+date: 20200101
 ---
 
 {::nomarkdown}
@@ -82,9 +82,9 @@ document.addEventListener('click', function (event) {
       <!-- Tools -->
       <div id="tools" class="mb3 order-2-ns order-1">
         <h1 class="b f4 lh-title mb2 mt0">Tools</h1>
-        <p class="mb2"><strong>JavaScript</strong><br>ES6+, AngularJS, Next.js, React/Redux, Node.js, GraphQL, webpack, grunt/gulp, jQuery</p>
+        <p class="mb2"><strong>JavaScript</strong><br>ES6+, AngularJS, Next.js, React, Ember.js, Node.js, GraphQL, webpack, grunt/gulp, jQuery</p>
         <p class="mb2"><strong>UI</strong><br>Storybook, styled-components, HTML5/SCSS/CSS, Foundation, Bootstrap, Tachyons</p>
-        <p class="mb2"><strong>Testing</strong><br>Jest, Enzyme, Jasmine, Karma, Mocha, Chai</p>
+        <p class="mb2"><strong>Testing</strong><br>Jest, Enzyme, Jasmine, Karma, Mocha, Chai, Selenium</p>
         <p class="mb2"><strong>General</strong><br>Django, Docker, nginx, Solr, Git, Bash, Amazon Web Services (AWS), Segment, CircleCI, Heroku, Rails</p>
       </div>
       <div id="date-updated" class="dn-p order-3">
@@ -97,8 +97,17 @@ document.addEventListener('click', function (event) {
       <!-- Better Mortgage -->
       <div class="mb3">
         <div class="mb2">
-          <span class="db f5 mt0 lh-title"><strong><a class="link underline"href="https://better.com" target="_blank">Better Mortgage</a></strong>, Front End Engineer</span>
+          <span class="db f5 mt0 lh-title"><strong><a class="link underline"href="https://better.com" target="_blank">Better.com</a></strong>, Software Engineer</span>
           <span class="db f7 gray i lh-copy mt0">July 2018 – present, New York City</span>
+        </div>
+        <div class="f7 lh-copy mb3">
+          <p class="mb2">Full-stack feature development for Better.com's loan origination platform. Better.com is a mortgage lender.</p>
+          <ul class="lh-copy ml3">
+            <li>Build and maintain borrower-facing features for Better.com (redisclosure service; authentication/session expiration UI; UX for uploading a competitor's loan estimate; loan overview page; etc.) <span class="dib f7 gray i">(Ember, SCSS)</span></li>
+            <li>Build internal tools for sales team for scheduling calls with borrowers <span class="dib f7 gray i">(Ember, third-party APIs)</span></li>
+            <li>Build integrations with marketing tools <span class="dib f7 gray i">(Ember, Optimizely, Segment)</span></li>
+            <li>On-call and internal support for triaging bugs and issues</li>
+          </ul>
         </div>
       </div>
       <!-- Architizer -->
@@ -126,11 +135,7 @@ document.addEventListener('click', function (event) {
           <span class="db f7 gray i lh-copy mt0">October 2014 – August 2015, Portland, Oregon</span>
         </div>
         <div class="f7 lh-copy mb3">
-          <p class="mb2">Internship-to-hire. Consultancy/agency setting.</p>
-          <ul class="lh-copy ml3">
-            <li>Built marketing pages and full-stack features for web applications and client projects <span class="dib f7 gray i">(Rails, AngularJS)</span></li>
-            <li>Delivered three client projects during my employment</li>
-          </ul>
+          <p class="mb2">Internship-to-hire. Consultancy/agency setting. Built marketing pages and full-stack features for web applications and client projects.
         </div>
       </div>
       <!-- Epicodus -->
@@ -140,11 +145,7 @@ document.addEventListener('click', function (event) {
           <span class="db f7 gray i lh-copy mt0">July 2014 – October 2014, Portland, Oregon</span>
         </div>
         <div class="f7 lh-copy mb3">
-          <p class="mb2">Code school. Learned Ruby on Rails, JavaScript, and other tools.</p>
-          <ul class="lh-copy ml3">
-            <li>Learned full-stack web development via test-driven development and daily pair programming</li>
-            <li>Attained internship-to-hire with EyeCue Lab after Epicodus</li>
-          </ul>
+          <p class="mb2">Code school. Learned Ruby on Rails, JavaScript, and other tools. Attained internship-to-hire with EyeCue Lab after Epicodus</p>
         </div>
       </div>
       <!-- Apple -->
@@ -154,11 +155,7 @@ document.addEventListener('click', function (event) {
           <span class="db f7 gray i lh-copy mt0">June 2013 – May 2014, Eugene, Oregon</span>
         </div>
         <div class="f7 lh-copy mb3">
-          <p class="mb2">Tier I technical support while completing my degree. Remote position.</p>
-          <ul class="lh-copy ml3">
-            <li>Provided technical phone support for macOS products, and customer service for Apple ID, fraud/billing, and account security</li>
-            <li>Provided email customer service for iTunes Store purchase issues</li>
-          </ul>
+          <p class="mb2">Tier I technical support and customer service for macOS products while completing my degree. Remote position.</p>
         </div>
       </div>
     </section>
