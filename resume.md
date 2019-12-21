@@ -26,17 +26,26 @@ date: 20180720
 <link rel="stylesheet" href="{{ "/assets/css/tachyons.min.css" | relative_url }}"/>
 <link rel="stylesheet" href="{{ "/assets/css/tachyons-print.css" | relative_url }}">
 
+<!-- GA -->
+<script>
+document.addEventListener('click', function (event) {
+  if (!event.target.matches('.ga')) return;                   // Bail if not ga
+  const action = event.target.getAttribute('ga-event-action') // Get action name
+  ga('send','event', 'Resume', action)                        // Send to ga
+}, false);
+</script>
+
 <!-- Resume -->
 <article class="sans-serif">
   <!-- Greeting (Large) -->
   <section id="top" class="db-ns dn mb4 w-100-ns">
     <h1 class="f3 lh-title mb3 mt0">👋 Hi, I'm Andrew M Westling, a software engineer in <span class="dib">Brooklyn, NY.</span></h1>
-    <a class="b--gray ba black br2 dib f6 ph3 pv1" onclick="ga('send','event', 'Resume', 'download')" href="{{ "/assets/resume/andrew_westling_resume.pdf" | relative_url }}" target="_blank" download>📄 Download as PDF</a>
-    <a class="b--gray ba black br2 dib f6 ph3 pv1" onclick="ga('send','event', 'Resume', 'print')" href="javascript:window.print()">🖨 Print this page</a>
+    <a ga-event-action="download" class="b--gray ba black br2 dib f6 ga ph3 pv1" href="{{ "/assets/resume/andrew_westling_resume.pdf" | relative_url }}" target="_blank" download>📄 Download as PDF</a>
+    <a ga-event-action="print" class="b--gray ba black br2 dib f6 ga ph3 pv1" onclick="ga('send','event', 'Resume', 'print')" href="javascript:window.print()">🖨 Print this page</a>
   </section>
   <!-- Greeting (Small) -->
   <section id="contact-s" class="db dn-ns mb4 w-100-ns">
-    <a class="b--gray ba black br2 dib dn-p f6 mb4 ph3 pv2" onclick="ga('send','event', 'Resume', 'download')" href="{{ "/assets/resume/andrew_westling_resume.pdf" | relative_url }}" target="_blank" download>📄 Download as PDF</a>
+    <a class="b--gray ba black br2 dib dn-p f6 mb4 ph3 pv2" href="{{ "/assets/resume/andrew_westling_resume.pdf" | relative_url }}" target="_blank" download>📄 Download as PDF</a>
     <div class="fl-p">
       <img class="dib-p dn" src="/assets/a.png" style="height: 48px; width: 48px; margin-right: 10px; border-radius: 50%;"/>
     </div>
@@ -46,9 +55,9 @@ date: 20180720
     <div>
       <h1 class="f4 lh-title mb0-p mf3 mt0"><strong class="dib">Andrew M Westling</strong>, <span class="dib f5">Software Engineer</span></h1>
       <p class="lh-title mb0-p mf3 mt0">
-        <a class="black db dib-p link" onclick="ga('send','event', 'Resume', 'email')" href="mailto:hi@andrewwestling.com" target="_blank">hi@andrewwestling.com</a>
+        <a ga-event-action="email" class="black db dib-p ga link" href="mailto:hi@andrewwestling.com" target="_blank">hi@andrewwestling.com</a>
         <span class="dib-p dn"> | </span>
-        <a class="black db dib-p link" onclick="ga('send','event', 'Resume', 'phone')" href="tel:16468010105" target="_blank">+1 (646) 801-0105</a>
+        <a ga-event-action="phone" class="black db dib-p ga link" href="tel:16468010105" target="_blank">+1 (646) 801-0105</a>
         <span class="dib-p dn"> | </span>
         <span class="db dib-p">Brooklyn, NY</span>
       </p>
@@ -61,8 +70,8 @@ date: 20180720
       <div id="contact-ns" class="db-ns dn mb3">
         <h1 class="b f4 lh-title mb2 mt0">Say Hello</h1>
         <p class="lh-copy mt0-ns">
-          <a class="db link underline-hover" onclick="ga('send','event', 'Resume', 'email')" href="mailto:hi@andrewwestling.com" target="_blank">hi@andrewwestling.com</a>
-          <a class="db link underline-hover" onclick="ga('send','event', 'Resume', 'phone')" href="tel:16468010105" target="_blank">+1 (646) 801-0105</a>
+          <a ga-event-action="email" class="db link ga underline-hover" href="mailto:hi@andrewwestling.com" target="_blank">hi@andrewwestling.com</a>
+          <a ga-event-action="phone" class="db link ga underline-hover" href="tel:16468010105" target="_blank">+1 (646) 801-0105</a>
         </p>
       </div>
       <!-- Education -->
