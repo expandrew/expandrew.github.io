@@ -6,7 +6,7 @@ description: "About me"
 ---
 Hi, I'm Andrew M Westling.
 
-<style>img { height: 500px; width: 500px; border-radius: 10px; }</style>
+<style>img { border-radius: 10px; }</style>
 ![Andrew M Westling](/assets/Andrew-M-Westling-2019-1.jpg)
 <br>
 <small>At Barbican Centre in London, May 2019. Photo by Cecily Devoto</small>
