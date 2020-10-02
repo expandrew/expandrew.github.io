@@ -3,10 +3,11 @@ title: Resume
 footer: false
 layout: resume
 permalink: /resume/
-date: 20200101
+date: 20201210
 ---
 
 {::nomarkdown}
+
 <!-- Overrides for regular site styles -->
 <style>
   .wrapper { max-width: calc(960px - (30px * 2)) !important; }
@@ -82,10 +83,10 @@ document.addEventListener('click', function (event) {
       <!-- Tools -->
       <div id="tools" class="mb3 order-2-ns order-1">
         <h1 class="b f4 lh-title mb2 mt0">Tools</h1>
-        <p class="mb2"><strong>JavaScript</strong><br>ES6+, AngularJS, Next.js, React, Ember.js, Node.js, GraphQL, webpack, grunt/gulp, jQuery</p>
-        <p class="mb2"><strong>UI</strong><br>Storybook, styled-components, HTML5/SCSS/CSS, Foundation, Bootstrap, Tachyons</p>
-        <p class="mb2"><strong>Testing</strong><br>Jest, Enzyme, Jasmine, Karma, Mocha, Chai, Selenium</p>
-        <p class="mb2"><strong>General</strong><br>Django, Docker, nginx, Solr, Git, Bash, Amazon Web Services (AWS), Segment, CircleCI, Heroku, Rails</p>
+        <p class="mb3"><strong>JavaScript</strong><br>TypeScript, ES2019, React, Ember.js, Next.js, Node.js, AngularJS, GraphQL, webpack</p>
+        <p class="mb3"><strong>UI</strong><br>Storybook, styled-components, Theme UI, SCSS, CSS Modules, Foundation, Bootstrap, Tachyons</p>
+        <p class="mb3"><strong>Testing</strong><br>Jest, Enzyme, Jasmine, Karma, Mocha, Chai, Selenium</p>
+        <p class="mb3"><strong>General</strong><br>Django, Docker, nginx, Solr, AWS, Segment, CircleCI, Heroku, Rails</p>
       </div>
       <div id="date-updated" class="dn-p order-3">
         <p class="f7 light-gray">{{ page.date }}</p>
@@ -95,41 +96,40 @@ document.addEventListener('click', function (event) {
     <section id="experience" class="fl-p flex flex-column flex-grow w-60-ns w-two-thirds-p">
       <h1 class="b f4 lh-title mb2 mt0">Experience</h1>
       <!-- Better Mortgage -->
-      <div class="mb3">
+      <div class="mb2">
         <div class="mb2">
           <span class="db f5 mt0 lh-title"><strong><a class="link underline"href="https://better.com" target="_blank">Better.com</a></strong>, Software Engineer</span>
           <span class="db f7 gray i lh-copy mt0">July 2018 – present, New York City</span>
         </div>
         <div class="f7 lh-copy mb3">
-          <p class="mb2">Full-stack feature development for Better.com's loan origination platform. Better.com is a mortgage lender.</p>
+          <p class="mb2">Design system and feature development for Better's loan origination platform. Better.com is a mortgage lender.</p>
           <ul class="lh-copy ml3">
-            <li>Build and maintain borrower-facing features for Better.com (redisclosure service; authentication/session expiration UI; UX for uploading a competitor's loan estimate; loan overview page; etc.) <span class="dib f7 gray i">(Ember, SCSS)</span></li>
-            <li>Build internal tools for sales team for scheduling calls with borrowers <span class="dib f7 gray i">(Ember, third-party APIs)</span></li>
-            <li>Build integrations with marketing tools <span class="dib f7 gray i">(Ember, Optimizely, Segment)</span></li>
-            <li>On-call and internal support for triaging bugs and issues</li>
+            <li>Currently building Better's design system to empower our engineering teams to build consistent and clean UIs <span class='dib f7 gray i'>(React, TypeScript, Theme UI, Storybook)</li>
+            <li>Built assorted borrower-facing features (redisclosure service; "required assets and buffer" logic; authentication/session expiration; UX for uploading a competitor's loan estimate; loan overview page; etc.) <span class="dib f7 gray i">(Ember, SCSS)</span></li>
+            <li>Built internal tools for sales team to schedule calls with borrowers <span class="dib f7 gray i">(Ember, third-party APIs)</span></li>
+            <li>Built integrations with marketing tools <span class="dib f7 gray i">(Ember, Optimizely, Segment)</span></li>
           </ul>
         </div>
       </div>
       <!-- Architizer -->
-      <div class="mb3">
+      <div class="mb2">
         <div class="mb2">
           <span class="db f5 mt0 lh-title"><strong><a class="link underline"href="https://architizer.com" target="_blank">Architizer</a></strong>, Software Engineer</span>
           <span class="db f7 gray i lh-copy mt0">September 2015 – June 2018, New York City</span>
         </div>
         <div class="f7 lh-copy mb3">
-          <p class="mb2">Full-stack/front-end-focused feature development and infrastructure maintenance for Architizer’s platform to help architects find building products.</p>
+          <p class="mb2">Full-stack and front-end feature development and infrastructure maintenance for Architizer’s platform to help architects find building products.</p>
           <ul class="lh-copy ml3">
-            <li>Built large features, including a private messaging interface, and directory interfaces to Solr search indexes <span class="dib f7 gray i">(AngularJS, SCSS, Django, Solr, Haystack)</span></li>
             <li>Established and maintained a UI component system to speed up feature development, and improve collaboration with designers <span class="dib f7 gray i">(React, Next.js, Storybook, styled-components, SCSS)</span></li>
-            <li>Managed and extended integrations with external tools for analytics, error logging, marketing, and customer support <span class="dib f7 gray i">(Segment)</span></li>
+            <li>Built large features, including a private messaging interface, and directory interfaces to Solr search indexes <span class="dib f7 gray i">(AngularJS, SCSS, Django, Solr, Haystack)</span></li>
+            <li>Extended integrations with external tools for analytics, error logging, marketing, and customer support <span class="dib f7 gray i">(Segment)</span></li>
             <li>Optimized frontend infrastructure to speed up deployment and improve test coverage <span class="dib f7 gray i">(Node.js, CircleCI, AWS, Docker, gulp)</span></li>
             <li>Cleaned up infrastructure, pruned AWS resources to reduce costs, and refactored stale application code</li>
-            <li>Onboarded new hires, participated in code reviews, and promoted collaborative engineering culture</li>
           </ul>
         </div>
       </div>
       <!-- EyeCue Lab -->
-      <div class="mb3">
+      <div class="mb2">
         <div class="mb2">
           <span class="db f5 mt0 lh-title"><strong><a class="link underline" href="http://eyecuelab.com/" target="_blank">EyeCue Lab</a></strong>, Software Engineer</span>
           <span class="db f7 gray i lh-copy mt0">October 2014 – August 2015, Portland, Oregon</span>
@@ -139,7 +139,7 @@ document.addEventListener('click', function (event) {
         </div>
       </div>
       <!-- Epicodus -->
-      <div class="mb3">
+      <div class="mb2">
         <div class="mb2">
           <span class="db f5 mt0 lh-title"><strong><a class="link underline" href="https://epicodus.com/" target="_blank">Epicodus</a></strong>
           <span class="db f7 gray i lh-copy mt0">July 2014 – October 2014, Portland, Oregon</span>
@@ -149,12 +149,12 @@ document.addEventListener('click', function (event) {
         </div>
       </div>
       <!-- Apple -->
-      <div class="mb3">
+      <div class="mb0">
         <div class="mb2">
           <span class="db f5 mt0 lh-title"><strong><a class="link underline" href="https://support.apple.com" target="_blank">Apple</a></strong>, AppleCare Advisor</span>
           <span class="db f7 gray i lh-copy mt0">June 2013 – May 2014, Eugene, Oregon</span>
         </div>
-        <div class="f7 lh-copy mb3">
+        <div class="f7 lh-copy mb0">
           <p class="mb2">Tier I technical support and customer service for macOS products while completing my degree. Remote position.</p>
         </div>
       </div>
@@ -162,4 +162,3 @@ document.addEventListener('click', function (event) {
   </div>
 </article>
 {:/}
-
