@@ -1,0 +1,28 @@
+{
+  "name": "andrewwestling.com",
+  "version": "1.0.0",
+  "private": true,
+  "description": "andrewwestling.com",
+  "author": "Andrew Westling",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "@mdx-js/mdx": "^1.6.22",
+    "@mdx-js/react": "^1.6.22",
+    "gatsby": "^2.26.1",
+    "gatsby-plugin-mdx": "^1.8.0",
+    "gatsby-plugin-theme-ui": "^0.3.5",
+    "gatsby-source-filesystem": "^2.9.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "theme-ui": "^0.3.5"
+  }
+}
