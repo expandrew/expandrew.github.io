@@ -8,5 +8,22 @@ export default {
     text: '#000',
     background: '#fff',
     primary: '#33e',
+    muted: '#f6f6f6',
+  },
+  styles: {
+    a: {
+      color: 'inherit',
+      '&:hover': {
+        color: 'primary',
+      },
+    },
+  },
+  sizes: {
+    container: '40em',
+  },
+  layout: {
+    container: {
+      paddingX: 3,
+    },
   },
 };
