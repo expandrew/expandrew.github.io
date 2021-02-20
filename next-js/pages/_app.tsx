@@ -30,7 +30,7 @@ export default class App extends NextApp {
               <Link>
                 <Flex sx={{ alignItems: 'center' }}>
                   <NextImage
-                    src="/images/a.png"
+                    src="/assets/a.png"
                     alt="Andrew Westling 'A' logo"
                     width="32px"
                     height="32px"
