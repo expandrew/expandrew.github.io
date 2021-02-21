@@ -27,16 +27,15 @@ export default {
     text: '#050708',
     background: '#ffffff',
     muted: '#666666',
+    highlight: '#efefef',
     primary: '#f1553a',
     secondary: '#1d93b2',
     tertiary: '#b8c05d',
     accent: '#fcbb1a',
-    highlight: '#efefef',
     modes: {
       dark: {
         text: '#dddddd',
         background: '#050708',
-        primary: '#f1553a',
         muted: '#898989',
         highlight: '#333333',
       },
