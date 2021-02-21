@@ -20,7 +20,7 @@ const space = [
 
 export default {
   useColorSchemeMediaQuery: true,
-  breakpoints: ['40rem', '52rem', '64rem'],
+  breakpoints: ['40rem'],
   fonts: {
     body: 'system-ui, sans-serif',
     heading: 'inherit',
