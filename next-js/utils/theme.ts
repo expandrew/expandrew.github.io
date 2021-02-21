@@ -1,5 +1,5 @@
 export default {
-  breakpoints: ['40em', '52em', '64em'],
+  breakpoints: ['40rem', '52rem', '64rem'],
   fonts: {
     body: 'system-ui, sans-serif',
     heading: 'inherit',
@@ -91,7 +91,7 @@ export default {
     full: '9999px',
   },
   sizes: {
-    container: '40em',
+    container: '50rem',
   },
   layout: {
     container: {
