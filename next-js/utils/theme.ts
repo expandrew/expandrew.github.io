@@ -51,6 +51,10 @@ export default {
     label: {
       fontSize: 0,
     },
+    footer: {
+      lineHeight: 2,
+      fontSize: 0,
+    },
     default: {
       fontSize: [0, 1],
       lineHeight: 'body',
@@ -97,6 +101,15 @@ export default {
     h6: {
       variant: 'text.heading',
       fontSize: [0, 1],
+    },
+    footer: {
+      backgroundColor: 'backgroundSecondary',
+      fontSize: 0,
+      paddingY: 4,
+      color: 'textSecondary',
+      a: {
+        color: 'textSecondary',
+      },
     },
   },
   radii: {
