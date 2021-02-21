@@ -24,7 +24,7 @@ export default {
     heading: 1.125,
   },
   colors: {
-    text: '#000000',
+    text: '#050708',
     background: '#ffffff',
     muted: '#666666',
     primary: '#f1553a',
@@ -34,7 +34,7 @@ export default {
     modes: {
       dark: {
         text: '#dddddd',
-        background: '#111111',
+        background: '#050708',
         primary: '#f1553a',
         muted: '#898989',
         highlight: '#333333',
