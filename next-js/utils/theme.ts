@@ -6,7 +6,6 @@ export default {
     monospace: 'Menlo, monospace',
   },
   fontSizes: [
-    0,
     '0.889rem',
     '1rem',
     '1.125rem',
@@ -36,12 +35,11 @@ export default {
       fontWeight: 'heading',
     },
     label: {
-      fontSize: 1,
+      fontSize: 0,
     },
     default: {
-      fontSize: 2,
+      fontSize: [0, 1],
       lineHeight: 'body',
-      marginBottom: 2,
     },
   },
   styles: {
@@ -55,6 +53,12 @@ export default {
       '&:hover': {
         color: 'primary',
       },
+    },
+    p: {
+      variant: 'text.default',
+    },
+    li: {
+      variant: 'text.default',
     },
     h1: {
       variant: 'text.heading',
