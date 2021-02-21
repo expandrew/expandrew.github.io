@@ -45,6 +45,11 @@ export const Footer = () => {
               <Link>Resume</Link>
             </NextLink>
           </Text>
+          <Text variant="footer" sx={{ a: { color: 'highlight' } }}>
+            <NextLink href="/awds" passHref>
+              <Link>AWDS</Link>
+            </NextLink>
+          </Text>
         </Box>
         <Box>
           {Object.keys(socialAccounts).map((account) => (
