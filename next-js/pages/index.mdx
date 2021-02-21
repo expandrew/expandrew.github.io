@@ -1,3 +1,5 @@
+import NextLink from 'next/link';
+import { Text, Link } from 'theme-ui';
 import { Greeting } from '../components/Greeting';
 import { PhotoOfMe } from '../components/PhotoOfMe';
 
@@ -11,3 +13,10 @@ I previously worked on the teams at [Architizer](https://architizer.com) and [Ey
 I play the violin with [Brooklyn Symphony Orchestra](https://brooklynsymphonyorchestra.org) in my free time.
 
 I grew up in Oregon. I have a degree in architecture from University of Oregon.
+
+<Text sx={{ marginY: 3 }}>
+  You can read more about my background on my{' '}
+  <NextLink href={'/resume'} passHref>
+    <Link>resume</Link>
+  </NextLink>.
+</Text>
