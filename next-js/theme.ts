@@ -89,18 +89,18 @@ export default {
         variant: 'text.heading',
         fontSize: [0, 1],
       },
-      a: {
-        color: 'inherit',
-        '&:hover': {
-          color: 'primary',
-        },
+    },
+    a: {
+      color: 'inherit',
+      '&:hover': {
+        color: 'primary',
       },
-      p: {
-        variant: 'text.default',
-      },
-      li: {
-        variant: 'text.default',
-      },
+    },
+    p: {
+      variant: 'text.default',
+    },
+    li: {
+      variant: 'text.default',
     },
     footer: {
       backgroundColor: 'highlight',
