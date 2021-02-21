@@ -5,7 +5,7 @@ import NextLink from 'next/link';
 import NextImage from 'next/image';
 import Head from 'next/head';
 import { jsx, Box, Container, Flex, Link, Text, ThemeProvider } from 'theme-ui';
-import theme from '../utils/theme';
+import theme from '../theme';
 import { DarkModeToggle } from '../components/DarkModeToggle';
 import { Footer } from '../components/Footer';
 

@@ -12,7 +12,7 @@ npx create-next-app --example with-mdx with-mdx-app
 
 ## Theme
 
-The theme is available in `/utils/theme.ts`
+The theme is available in [`theme.ts`](theme.ts). It's not precious, and I change my mind sometimes. I tried to keep color contrasts and font sizes accessible enough, but it's not scientific.
 
 ## Deployment
 
