@@ -1,4 +1,5 @@
 export default {
+  useColorSchemeMediaQuery: true,
   breakpoints: ['40rem', '52rem', '64rem'],
   fonts: {
     body: 'system-ui, sans-serif',
