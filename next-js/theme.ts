@@ -51,6 +51,7 @@ export default {
     },
     label: {
       fontSize: 0,
+      color: 'textSecondary',
     },
     footer: {
       lineHeight: 2,
