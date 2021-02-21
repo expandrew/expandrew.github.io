@@ -4,7 +4,7 @@ This is my static homepage rewritten with Next.js, TypeScript, MDX, and Theme UI
 
 ## Setup
 
-This repo was boostrapped from this:
+This repo was bootstrapped from this:
 
 ```bash
 npx create-next-app --example with-mdx with-mdx-app
