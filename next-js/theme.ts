@@ -8,6 +8,16 @@ const fontSizes = [
   '2.000rem',
 ];
 
+const space = [
+  '0.000rem',
+  '0.250rem',
+  '0.500rem',
+  '1.000rem',
+  '2.000rem',
+  '4.000rem',
+  '8.000rem',
+];
+
 export default {
   useColorSchemeMediaQuery: true,
   breakpoints: ['40rem', '52rem', '64rem'],
@@ -16,6 +26,7 @@ export default {
     heading: 'inherit',
     monospace: 'Menlo, monospace',
   },
+  space,
   fontSizes,
   fontWeights: {
     body: 400,
@@ -106,8 +117,8 @@ export default {
     },
     footer: {
       backgroundColor: 'highlight',
-      paddingY: 4,
       fontSize: fontSizes[0],
+      paddingY: space[4],
       color: 'muted',
       a: {
         color: 'muted',
@@ -124,7 +135,7 @@ export default {
   },
   layout: {
     container: {
-      paddingX: 3,
+      paddingX: space[3],
     },
   },
 };
