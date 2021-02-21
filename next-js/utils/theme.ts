@@ -28,6 +28,8 @@ export default {
     primary: '#f1553a',
     muted: '#f6f6f6',
     highlight: '#efefef',
+    backgroundSecondary: '#eeeeee',
+    textSecondary: '#666666',
     modes: {
       dark: {
         text: '#dddddd',
@@ -35,6 +37,8 @@ export default {
         primary: '#f1553a',
         muted: '#222222',
         highlight: '#333333',
+        backgroundSecondary: '#222222',
+        textSecondary: '#898989',
       },
     },
   },
