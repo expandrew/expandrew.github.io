@@ -1,6 +1,6 @@
 //@jsx jsx
 import { jsx, Box, Text } from 'theme-ui';
-import NextImage from 'next/Image';
+import NextImage from 'next/image';
 
 export const PhotoOfMe = () => (
   <Box>

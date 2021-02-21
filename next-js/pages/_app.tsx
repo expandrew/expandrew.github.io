@@ -2,7 +2,7 @@
 import * as React from 'react';
 import NextApp from 'next/app';
 import NextLink from 'next/link';
-import NextImage from 'next/Image';
+import NextImage from 'next/image';
 import Head from 'next/head';
 import { jsx, Box, Container, Flex, Link, Text, ThemeProvider } from 'theme-ui';
 import theme from '../utils/theme';
