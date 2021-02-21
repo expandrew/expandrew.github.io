@@ -29,6 +29,7 @@ export default {
     muted: '#666666',
     primary: '#f1553a',
     secondary: '#1d93b2',
+    tertiary: '#b8c05d',
     accent: '#fcbb1a',
     highlight: '#efefef',
     modes: {
