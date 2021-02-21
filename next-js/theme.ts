@@ -1,3 +1,13 @@
+const fontSizes = [
+  '0.800rem',
+  '1.000rem',
+  '1.125rem',
+  '1.275rem',
+  '1.450rem',
+  '1.600rem',
+  '2.000rem',
+];
+
 export default {
   useColorSchemeMediaQuery: true,
   breakpoints: ['40rem', '52rem', '64rem'],
@@ -6,15 +16,7 @@ export default {
     heading: 'inherit',
     monospace: 'Menlo, monospace',
   },
-  fontSizes: [
-    '0.79rem',
-    '1rem',
-    '1.125rem',
-    '1.266rem',
-    '1.424rem',
-    '1.602rem',
-    '1.802rem',
-  ],
+  fontSizes,
   fontWeights: {
     body: 400,
     heading: 600,
@@ -48,15 +50,15 @@ export default {
       fontWeight: 'heading',
     },
     label: {
-      fontSize: 0,
+      fontSize: fontSizes[0],
       color: 'muted',
     },
     footer: {
       lineHeight: 2,
-      fontSize: 0,
+      fontSize: fontSizes[0],
     },
     default: {
-      fontSize: 1,
+      fontSize: fontSizes[1],
       lineHeight: 'body',
     },
   },
@@ -67,27 +69,27 @@ export default {
       fontWeight: 'body',
       h1: {
         variant: 'text.heading',
-        fontSize: [5, 6],
+        fontSize: [fontSizes[5], fontSizes[6]],
       },
       h2: {
         variant: 'text.heading',
-        fontSize: [4, 5],
+        fontSize: [fontSizes[4], fontSizes[5]],
       },
       h3: {
         variant: 'text.heading',
-        fontSize: [3, 4],
+        fontSize: [fontSizes[3], fontSizes[4]],
       },
       h4: {
         variant: 'text.heading',
-        fontSize: [2, 3],
+        fontSize: [fontSizes[2], fontSizes[3]],
       },
       h5: {
         variant: 'text.heading',
-        fontSize: [1, 2],
+        fontSize: [fontSizes[1], fontSizes[2]],
       },
       h6: {
         variant: 'text.heading',
-        fontSize: [0, 1],
+        fontSize: [fontSizes[0], fontSizes[1]],
       },
     },
     a: {
@@ -104,8 +106,8 @@ export default {
     },
     footer: {
       backgroundColor: 'highlight',
-      fontSize: 0,
       paddingY: 4,
+      fontSize: fontSizes[0],
       color: 'muted',
       a: {
         color: 'muted',
