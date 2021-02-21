@@ -3,13 +3,15 @@ import Head from 'next/head';
 export const Meta = ({
   title,
   description = 'Andrew M Westling is a software engineer in New York City.',
+  date,
   children,
 }) => {
   return (
     <>
       <Head>
         <title>{title && `${title} | `}andrewwestling.com</title>
-        <meta name="description" content={description}></meta>
+        {date && <meta name="date" content={date} />}
+        <meta name="description" content={description} />
         <link
           rel="apple-touch-icon"
           sizes="180x180"

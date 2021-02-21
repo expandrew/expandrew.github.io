@@ -3,16 +3,18 @@ import NextLink from 'next/link';
 import { Meta } from '../components/Meta';
 import { Grid, Link, Message, Text } from 'theme-ui';
 
+export const date = '2013-06-13';
+export const updatedDate = '2021-02-21';
+
 <Meta
   title={'Media Cube'}
   description={
     'Media Cube is a piece for holding meaningful media objects, designed and built by Andrew Westling'
   }
+  date={date}
 />
 
 # Media Cube
-
-20130610
 
 <Message sx={{ marginBottom: 3 }}>
   <Text>
@@ -248,3 +250,11 @@ The build-out took place in the [Millrace Woodshop](https://blogs.uoregon.edu/de
 
 - [My Instagram post after the final studio review (June 5, 2013)](https://www.instagram.com/p/aM7YjjjSaN/)
 - [My Instagram post from installing and setting up the cube when I moved into my first studio apartment in Portland (January 14, 2015)](https://www.instagram.com/p/x06x-cjSa_/)
+
+<Text as="p" variant="label">
+  Originally posted: {date}
+</Text>
+
+<Text as="p" variant="label">
+  Last updated: {updatedDate}
+</Text>

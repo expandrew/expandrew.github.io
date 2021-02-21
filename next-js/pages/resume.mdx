@@ -1,7 +1,9 @@
 import { Greeting } from '../components/Greeting';
 import { Meta } from '../components/Meta';
 
-<Meta title={'Resume'} />
+export const date = '2020-12-10';
+
+<Meta title={'Resume'} date={date} />
 
 <Greeting />
 
@@ -61,3 +63,6 @@ Tier I technical support and customer service for macOS products while completin
 # Education
 
 Bachelor of Architecture, University of Oregon, 2014
+<Text as="p" variant="label">
+  Last updated: {date}
+</Text>
