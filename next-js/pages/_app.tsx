@@ -6,6 +6,7 @@ import NextImage from 'next/Image';
 import Head from 'next/head';
 import { jsx, Box, Container, Flex, Link, Text, ThemeProvider } from 'theme-ui';
 import theme from '../utils/theme';
+import { DarkModeToggle } from '../components/DarkModeToggle';
 
 export default class App extends NextApp {
   render() {
@@ -46,6 +47,9 @@ export default class App extends NextApp {
                     <Text sx={{ marginLeft: '10px' }}>andrewwestling.com</Text>
                   </Link>
                 </NextLink>
+              </Box>
+              <Box>
+                <DarkModeToggle />
               </Box>
             </Flex>
           </Container>

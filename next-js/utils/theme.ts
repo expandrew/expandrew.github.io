@@ -28,6 +28,15 @@ export default {
     primary: '#f1553a',
     muted: '#f6f6f6',
     highlight: '#efefef',
+    modes: {
+      dark: {
+        text: '#dddddd',
+        background: '#111111',
+        primary: '#f1553a',
+        muted: '#222222',
+        highlight: '#333333',
+      },
+    },
   },
   text: {
     heading: {
