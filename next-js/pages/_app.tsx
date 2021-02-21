@@ -22,7 +22,7 @@ export default class App extends NextApp {
             role="banner"
             sx={{
               alignItems: 'center',
-              borderBottomColor: 'muted',
+              borderBottomColor: 'highlight',
               borderBottomStyle: 'solid',
               borderBottomWidth: '1px',
               borderTopColor: 'primary',

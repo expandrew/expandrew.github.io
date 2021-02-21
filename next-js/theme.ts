@@ -26,20 +26,16 @@ export default {
   colors: {
     text: '#000000',
     background: '#ffffff',
+    muted: '#666666',
     primary: '#f1553a',
-    muted: '#f6f6f6',
     highlight: '#efefef',
-    backgroundSecondary: '#eeeeee',
-    textSecondary: '#666666',
     modes: {
       dark: {
         text: '#dddddd',
         background: '#111111',
         primary: '#f1553a',
-        muted: '#222222',
+        muted: '#898989',
         highlight: '#333333',
-        backgroundSecondary: '#222222',
-        textSecondary: '#898989',
       },
     },
   },
@@ -51,7 +47,7 @@ export default {
     },
     label: {
       fontSize: 0,
-      color: 'textSecondary',
+      color: 'muted',
     },
     footer: {
       lineHeight: 2,
@@ -105,12 +101,12 @@ export default {
       fontSize: [0, 1],
     },
     footer: {
-      backgroundColor: 'backgroundSecondary',
+      backgroundColor: 'highlight',
       fontSize: 0,
       paddingY: 4,
-      color: 'textSecondary',
+      color: 'muted',
       a: {
-        color: 'textSecondary',
+        color: 'muted',
       },
     },
   },
