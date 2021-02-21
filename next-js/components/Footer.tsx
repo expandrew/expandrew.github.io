@@ -42,7 +42,7 @@ export const Footer = () => {
           </Text>
           <Text variant="footer">
             <NextLink href="/resume" passHref>
-              <Link href="mailto:hi@andrewwestling.com">Resume</Link>
+              <Link>Resume</Link>
             </NextLink>
           </Text>
         </Box>
