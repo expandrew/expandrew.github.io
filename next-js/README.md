@@ -1,21 +1,19 @@
-# Example app with MDX
+# andrewwestling.com with Next.js
 
-This example shows using [MDX](https://github.com/mdx-js/mdx) as top level pages for your next.js app.
+This is my static homepage rewritten with Next.js, TypeScript, MDX, and Theme UI.
 
-## Deploy your own
+## Setup
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-mdx&project-name=with-mdx&repository-name=with-mdx)
-
-## How to use
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+This repo was boostrapped from this:
 
 ```bash
 npx create-next-app --example with-mdx with-mdx-app
-# or
-yarn create next-app --example with-mdx with-mdx-app
 ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+## Theme
+
+The theme is available in `/utils/theme.ts`
+
+## Deployment
+
+I'm using Vercel to deploy this. I just followed their instructions. I'm using the Next.js preset and I linked to the GitHub repo from their site.
