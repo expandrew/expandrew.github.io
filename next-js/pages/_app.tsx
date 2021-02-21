@@ -3,6 +3,7 @@ import * as React from 'react';
 import NextApp from 'next/app';
 import NextLink from 'next/link';
 import NextImage from 'next/Image';
+import Head from 'next/head';
 import { jsx, Container, Flex, Link, Text, ThemeProvider } from 'theme-ui';
 import theme from '../utils/theme';
 
@@ -11,6 +12,9 @@ export default class App extends NextApp {
     const { Component, pageProps } = this.props;
     return (
       <ThemeProvider theme={theme}>
+        <Head>
+          <title>andrewwestling.com</title>
+        </Head>
         <header
           role="banner"
           sx={{
