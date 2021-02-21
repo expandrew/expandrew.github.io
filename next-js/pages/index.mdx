@@ -1,0 +1,26 @@
+import NextLink from 'next/link';
+import { Text, Link } from 'theme-ui';
+import { Greeting } from '../components/Greeting';
+import { Meta } from '../components/Meta';
+import { PhotoOfMe } from '../components/PhotoOfMe';
+
+<Greeting />
+<PhotoOfMe />
+
+I'm a software engineer in New York City. I currently work at [Better](https://better.com).
+
+I previously worked on the teams at [Architizer](https://architizer.com) and [EyeCue Lab](https://eyecuelab.com).
+
+I play the violin with [Brooklyn Symphony Orchestra](https://brooklynsymphonyorchestra.org) in my free time.
+
+I grew up in Oregon. I have a degree in architecture from University of Oregon.
+
+<Text sx={{ marginY: 3 }}>
+  You can read more about my background on my{' '}
+  <NextLink href={'/resume'} passHref>
+    <Link>resume</Link>
+  </NextLink>
+  , or read about my <NextLink href={'/posts/media-cube'} passHref>
+    <Link>Media Cube project</Link>
+  </NextLink>.
+</Text>
