@@ -4,7 +4,7 @@ import NextApp from 'next/app';
 import NextLink from 'next/link';
 import NextImage from 'next/Image';
 import Head from 'next/head';
-import { jsx, Container, Flex, Link, Text, ThemeProvider } from 'theme-ui';
+import { jsx, Box, Container, Flex, Link, Text, ThemeProvider } from 'theme-ui';
 import theme from '../utils/theme';
 
 export default class App extends NextApp {
@@ -30,22 +30,24 @@ export default class App extends NextApp {
           }}
         >
           <Container>
-            <NextLink href="/" passHref>
-              <Link>
-                <Flex sx={{ alignItems: 'center' }}>
-                  <NextImage
-                    src="/assets/a.png"
-                    alt="Andrew Westling 'A' logo"
-                    width="32px"
-                    height="32px"
-                    sx={{
-                      borderRadius: 'full',
-                    }}
-                  />
-                  <Text sx={{ marginLeft: '10px' }}>andrewwestling.com</Text>
-                </Flex>
-              </Link>
-            </NextLink>
+            <Flex
+              sx={{ justifyContent: 'space-between', alignItems: 'center' }}
+            >
+              <Box sx={{ flex: '0 1 auto' }}>
+                <NextLink href="/" passHref>
+                  <Link sx={{ display: 'flex', alignItems: 'center' }}>
+                    <NextImage
+                      src="/assets/a.png"
+                      alt="Andrew Westling 'A' logo"
+                      width={32}
+                      height={32}
+                      sx={{ borderRadius: 'full' }}
+                    />
+                    <Text sx={{ marginLeft: '10px' }}>andrewwestling.com</Text>
+                  </Link>
+                </NextLink>
+              </Box>
+            </Flex>
           </Container>
         </header>
         <main>
