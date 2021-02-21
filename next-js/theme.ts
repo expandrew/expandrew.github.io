@@ -28,6 +28,8 @@ export default {
     background: '#ffffff',
     muted: '#666666',
     primary: '#f1553a',
+    secondary: '#1d93b2',
+    accent: '#fcbb1a',
     highlight: '#efefef',
     modes: {
       dark: {
