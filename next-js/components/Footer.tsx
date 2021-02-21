@@ -1,6 +1,5 @@
-//@jsx jsx
 import NextLink from 'next/link';
-import { jsx, Box, Container, Grid, Link, Text } from 'theme-ui';
+import { Box, Container, Grid, Link, Text } from 'theme-ui';
 
 const socialAccounts = {
   github: {
