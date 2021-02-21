@@ -58,7 +58,7 @@ export default {
       fontSize: 0,
     },
     default: {
-      fontSize: [0, 1],
+      fontSize: 1,
       lineHeight: 'body',
     },
   },
