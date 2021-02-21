@@ -65,42 +65,42 @@ export default {
       fontFamily: 'body',
       lineHeight: 'body',
       fontWeight: 'body',
-    },
-    a: {
-      color: 'inherit',
-      '&:hover': {
-        color: 'primary',
+      h1: {
+        variant: 'text.heading',
+        fontSize: [5, 6],
       },
-    },
-    p: {
-      variant: 'text.default',
-    },
-    li: {
-      variant: 'text.default',
-    },
-    h1: {
-      variant: 'text.heading',
-      fontSize: [5, 6],
-    },
-    h2: {
-      variant: 'text.heading',
-      fontSize: [4, 5],
-    },
-    h3: {
-      variant: 'text.heading',
-      fontSize: [3, 4],
-    },
-    h4: {
-      variant: 'text.heading',
-      fontSize: [2, 3],
-    },
-    h5: {
-      variant: 'text.heading',
-      fontSize: [1, 2],
-    },
-    h6: {
-      variant: 'text.heading',
-      fontSize: [0, 1],
+      h2: {
+        variant: 'text.heading',
+        fontSize: [4, 5],
+      },
+      h3: {
+        variant: 'text.heading',
+        fontSize: [3, 4],
+      },
+      h4: {
+        variant: 'text.heading',
+        fontSize: [2, 3],
+      },
+      h5: {
+        variant: 'text.heading',
+        fontSize: [1, 2],
+      },
+      h6: {
+        variant: 'text.heading',
+        fontSize: [0, 1],
+      },
+      a: {
+        color: 'inherit',
+        '&:hover': {
+          color: 'primary',
+        },
+      },
+      p: {
+        variant: 'text.default',
+      },
+      li: {
+        variant: 'text.default',
+      },
     },
     footer: {
       backgroundColor: 'highlight',
