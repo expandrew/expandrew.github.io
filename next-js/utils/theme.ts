@@ -27,6 +27,7 @@ export default {
     background: '#ffffff',
     primary: '#f1553a',
     muted: '#f6f6f6',
+    highlight: '#efefef',
   },
   text: {
     heading: {
