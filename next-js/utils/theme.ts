@@ -81,6 +81,11 @@ export default {
       fontSize: [0, 1],
     },
   },
+  radii: {
+    default: '3px',
+    large: '10px',
+    full: '9999px',
+  },
   sizes: {
     container: '40em',
   },

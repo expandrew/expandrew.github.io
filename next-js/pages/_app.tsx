@@ -35,7 +35,7 @@ export default class App extends NextApp {
                     width="32px"
                     height="32px"
                     sx={{
-                      borderRadius: '50%',
+                      borderRadius: 'full',
                     }}
                   />
                   <Text sx={{ marginLeft: '10px' }}>andrewwestling.com</Text>
