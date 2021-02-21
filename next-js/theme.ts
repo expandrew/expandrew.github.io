@@ -132,6 +132,7 @@ export default {
   },
   sizes: {
     container: '50rem',
+    space,
   },
   layout: {
     container: {
