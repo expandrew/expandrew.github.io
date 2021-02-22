@@ -102,18 +102,28 @@ export default {
         variant: 'text.heading',
         fontSize: [fontSizes[0], fontSizes[1]],
       },
+      code: {
+        backgroundColor: 'highlight',
+        borderRadius: 'default',
+        color: 'primary',
+        padding: space[1],
+      },
+      blockquote: {
+        backgroundColor: 'highlight',
+        borderRadius: 'default',
+        padding: [space[2], space[4]],
+        marginX: [space[2], space[4]],
+        p: {
+          variant: 'text.label',
+          margin: 0,
+        },
+      },
     },
     a: {
       color: 'inherit',
       '&:hover': {
         color: 'primary',
       },
-    },
-    p: {
-      variant: 'text.default',
-    },
-    li: {
-      variant: 'text.default',
     },
     footer: {
       backgroundColor: 'highlight',
