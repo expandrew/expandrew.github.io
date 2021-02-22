@@ -115,12 +115,6 @@ export default {
         color: 'primary',
       },
     },
-    p: {
-      variant: 'text.default',
-    },
-    li: {
-      variant: 'text.default',
-    },
     footer: {
       backgroundColor: 'highlight',
       fontSize: fontSizes[0],
