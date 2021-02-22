@@ -1,0 +1,147 @@
+import NextLink from 'next/link';
+import { Link, Message, Text } from 'theme-ui';
+import { Meta } from '../components/Meta';
+
+<Meta title={'Bonk'} date={'2021-02-21'} />
+
+# Bonk
+
+<Message>
+  <Text as="p">
+    This page is about a custom TypeScript events library I wrote to control
+    devices in Media Cube.
+  </Text>
+  <Text as="p" sx={{ marginTop: 3 }}>
+    To read more about Media Cube, go to the{' '}
+    <NextLink href="/media-cube" passHref>
+      <Link>Media Cube project page</Link>
+    </NextLink>
+    .
+  </Text>
+</Message>
+
+Bonk is a custom library to map events on assorted devices in Media Cube.
+
+[View the project on GitHub](https://github.com/expandrew/media-cube/tree/main/bonk)
+
+## Overview
+
+- Written in TypeScript
+- Intended to run on Raspbian, on Raspberry Pi 3B+
+- Takes inputs from devices like Griffin PowerMate and Senic Nuimo
+- Sends outputs to devices like Sonos
+- Bidirectional inputs and outputs (i.e. Sonos play state causes PowerMate LED to go on/off; PowerMate press causes Sonos to play)
+- Can be extended to support more devices and outputs
+
+## Structure
+
+Bonk resembles an [Event Bus](http://www.rribbit.org/eventbus.html):
+
+> An Eventbus is a mechanism that allows different components to communicate with each other without knowing about each other. A component can send an Event to the Eventbus without knowing who will pick it up or how many others will pick it up. Components can also listen to Events on an Eventbus, without knowing who sent the Events. That way, components can communicate without depending on each other. Also, it is very easy to substitute a component. As long as the new component understands the Events that are being sent and received, the other components will never know.
+
+The files within the `src/` directory work like this:
+
+- **`devices/*.ts`**: where device events, device methods, and other data are defined
+  - Griffin PowerMate (press/rotation events; `setLed()` method)
+  - Senic Nuimo Control (press/rotation events; methods like `connect()` or `displayGlyph()`; Glyphs)
+  - Sonos (play/pause/group events; media control methods; some extra data for `isPlaying` or `isGrouped`)
+  - ~~blink(1)~~
+- **`index.ts`**: where device events are mapped to device methods
+  - Map PowerMate input events to Sonos methods
+  - Map Nuimo input events to Sonos methods
+  - Map Sonos play/pause events to PowerMate LED (i.e. turn on PowerMate LED when Sonos is playing)
+  - Map Nuimo "discovery" state to PowerMate LED pulse (i.e. pulse PowerMate LED when connecting to Nuimo)
+- **`pm2.config.json`**: configuration for running the library in a process manager
+  - pm2
+  - Debug
+
+### Anatomy of a device
+
+Each device exports:
+
+- a class that represents the device, with methods for device functions (`setLed()`, `play()`, `volumeUp()`, etc.)
+- a list of its events
+- optionally, any other list of data that the index may need when setting up event listeners (ex. Nuimo glyphs)
+
+Each device class extends `EventEmitter`, so it can emit events when something happens (i.e. a device input occurs, the state of a device changes).
+
+A device exports its possible events, which get used in the Index file by event listeners.
+
+A device also contains methods pertaining to its functionality (i.e. Sonos has `play()`, `pause()`, etc.; PowerMate has `setLed()`, etc.)
+
+## Problems along the way
+
+**[TODO: Go through note with the issues]**
+
+### PowerMate Drivers
+
+Didn't know how I was going to handle USB drivers; thought I had to make it a USB HID device but I couldn't figure out how to remap drivers in Linux (it has a built-in `powermate` driver for the device, but it doesn't display as a HID in `/dev/hidraw0` etc.
+
+### USB Device Detection
+
+TL;DR: I couldn't start the development environment without PowerMate plugged in, and the app would crash if/when it was unplugged
+
+[PR Comment](https://github.com/expandrew/media-cube/pull/2#issuecomment-751952546)
+
+`async`/`await` in TypeScript classes was weird - I avoided it by having the class still initiate but the PowerMate still be discovering
+
+### Reconnecting Nuimo
+
+Since this whole thing is headless, it's tricky to dig in when something goes wrong
+
+I added a shortcut to force re-pairing of Nuimo if/when something goes wrong
+
+### Nuimo Rotation Sensitivity
+
+It clamps rotation
+
+It's also a lot more sensitive
+
+### Double Press and Triple Press
+
+Nuimo has high latency on double presses, so I had to avoid this as an input method
+
+Triple Press on PowerMate (20210103)
+
+---
+
+## All Devices
+
+- Griffin PowerMate USB input knob
+  - [Product Page](https://griffin.zendesk.com/hc/en-us/articles/206445584-PowerMate-USB)
+  - Primary control knob
+  - This is designed into the cabinet (there is a hole routed into the top of the cabinet)
+  - The knob is prominent on the design of the cabinet; discourages you from putting large items on top of it. The cabinet itself rotates, so I placed it here to imply that nothing should go on top of the cabinet
+  - Was originally intended to connect to the Mac mini(s), but I connected to Raspberry Pi once I moved over to that.
+- Raspberry Pi 3B+
+  - This is the primary 'computer' inside Media Cube.
+  - This replaced the Mac mini(s) as the main computing unit for the cabinet.
+- Apple USB SuperDrive
+- Sonos speakers
+  - I have a Sonos One SL that I discovered fits through the hole I originally drilled for the PowerMate's USB connector (if I use an Apple power cord with the Sonos) **[Get a photo of this]**
+- Senic Nuimo Control
+  - [Indiegogo](https://www.indiegogo.com/projects/nuimo-the-world-s-most-magical-controller)
+  - Remote control knob
+  - Much like the PowerMate, but uses Bluetooth Low Energy
+  - I use this mostly from my desk while I'm working (across the room from reach of Media Cube, so more convenient to use the remote)
+- blink(1) USB RGB LED notification light
+  - [Product homepage](https://blink1.thingm.com/)
+- Tivoli Model One Table Radio
+  - I discovered that my Tivoli Model One fits perfectly in the spot I originally intended for the Mac mini(s)
+  -
+- Philips Hue Bridge
+  - This requires a direct wired connection to my router, so I mounted it inside the hidden compartment and connected it with a short patch cable.
+- AirPort Time Capsule
+  - I discovered that my AirPort Time Capsule fits perfectly in the spot I originally intended for the WD RAID Hard Drive.
+  - Once I stopped using/sold the Mac mini(s), I discontinued the WD Hard Drive and started putting the Time Capsule in its place, with
+- Cable modem
+  - I drilled my cable modem into the inside of the hidden compartment on Media Cube, so this is where it lives
+
+## Trivia
+
+- The name Bonk comes from the word "knob" spelled backward, because the library was originally intended to control just the Griffin PowerMate USB input knob, but it was later extended to support more devices.
+
+## Resources
+
+- [Design Patterns: Event Bus](https://dzone.com/articles/design-patterns-event-bus)
+- [Node.js Events](https://nodejs.org/api/events.html)
