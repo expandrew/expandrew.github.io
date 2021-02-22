@@ -117,6 +117,12 @@ export default {
         marginLeft: `calc(-${space[3]} - ${space[1]})`,
         fill: 'text',
       },
+      code: {
+        backgroundColor: 'highlight',
+        borderRadius: 'default',
+        color: 'primary',
+        padding: space[1],
+      },
     },
     a: {
       color: 'inherit',
