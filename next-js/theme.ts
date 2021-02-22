@@ -123,6 +123,16 @@ export default {
         color: 'primary',
         padding: space[1],
       },
+      blockquote: {
+        backgroundColor: 'highlight',
+        borderRadius: 'default',
+        padding: [space[2], space[4]],
+        marginX: [space[2], space[4]],
+        p: {
+          variant: 'text.label',
+          margin: 0,
+        },
+      },
     },
     a: {
       color: 'inherit',
