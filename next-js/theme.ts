@@ -102,6 +102,12 @@ export default {
         variant: 'text.heading',
         fontSize: [fontSizes[0], fontSizes[1]],
       },
+      code: {
+        backgroundColor: 'highlight',
+        borderRadius: 'default',
+        color: 'primary',
+        padding: space[1],
+      },
     },
     a: {
       color: 'inherit',
