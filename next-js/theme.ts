@@ -115,6 +115,7 @@ export default {
         lineHeight: 1,
         paddingRight: space[1],
         marginLeft: `calc(-${space[3]} - ${space[1]})`,
+        fill: 'text',
       },
     },
     a: {
