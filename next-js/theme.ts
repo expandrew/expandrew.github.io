@@ -59,6 +59,12 @@ export default {
       fontFamily: 'heading',
       lineHeight: 'heading',
       fontWeight: 'heading',
+      // For remark-autolink-headings
+      '&:hover': {
+        '.anchor-link': {
+          visibility: [null, 'visible'],
+        },
+      },
     },
     label: {
       fontSize: fontSizes[0],
@@ -101,6 +107,15 @@ export default {
       h6: {
         variant: 'text.heading',
         fontSize: [fontSizes[0], fontSizes[1]],
+      },
+      // For remark-autolink-headings
+      '.anchor-link': {
+        visibility: 'hidden',
+        float: 'left',
+        lineHeight: 1,
+        paddingRight: space[1],
+        marginLeft: `calc(-${space[3]} - ${space[1]})`,
+        fill: 'text',
       },
     },
     a: {
