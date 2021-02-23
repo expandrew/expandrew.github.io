@@ -1,6 +1,7 @@
 const autolinkHeadings = require('remark-autolink-headings');
 const collapse = require('remark-collapse');
 const slug = require('remark-slug');
+const toc = require('remark-toc');
 
 const autoLinkHeadingsOptions = {
   behavior: 'prepend',
@@ -38,6 +39,7 @@ const withMDX = require('@next/mdx')({
       [collapse, { test: '' }],
       slug,
       [autolinkHeadings, autoLinkHeadingsOptions],
+      toc,
     ],
   },
   rehypePlugins: [],
