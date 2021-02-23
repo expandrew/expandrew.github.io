@@ -133,6 +133,20 @@ export default {
           margin: 0,
         },
       },
+      p: {
+        marginY: space[3],
+        color: 'inherit',
+      },
+      th: {
+        borderBottomColor: 'muted',
+        borderBottomStyle: 'solid',
+        borderBottomWidth: '1px',
+      },
+      td: {
+        borderBottomColor: 'highlight',
+        borderBottomStyle: 'solid',
+        borderBottomWidth: '1px',
+      },
     },
     a: {
       color: 'inherit',

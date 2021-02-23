@@ -20,58 +20,91 @@ import { Meta } from '../components/Meta';
   </Text>
 </Message>
 
-Bonk is a custom library to map events on assorted devices in Media Cube.
-
-[View the project on GitHub](https://github.com/expandrew/media-cube/tree/main/bonk)
-
 ## Table of Contents
 
 ## Overview
+
+Bonk is a custom library to map events on assorted devices in Media Cube.
 
 - Written in TypeScript
 - Intended to run on Raspbian, on Raspberry Pi 3B+
 - Takes inputs from devices like Griffin PowerMate and Senic Nuimo
 - Sends outputs to devices like Sonos
-- Bidirectional inputs and outputs (i.e. Sonos play state causes PowerMate LED to go on/off; PowerMate press causes Sonos to play)
-- Can be extended to support more devices and outputs
+- Can be extended to support more devices
+
+[View the code on GitHub](https://github.com/expandrew/media-cube/tree/main/bonk)
 
 ## Structure
 
-Bonk resembles an [Event Bus](http://www.rribbit.org/eventbus.html):
+The library is separated into device files, the index file, and the runtime configuration.
+
+From the start, it was important that devices be completely independent of each other.
+
+For this reason, Bonk resembles an [Event Bus](http://www.rribbit.org/eventbus.html):
 
 > An Eventbus is a mechanism that allows different components to communicate with each other without knowing about each other. A component can send an Event to the Eventbus without knowing who will pick it up or how many others will pick it up. Components can also listen to Events on an Eventbus, without knowing who sent the Events. That way, components can communicate without depending on each other. Also, it is very easy to substitute a component. As long as the new component understands the Events that are being sent and received, the other components will never know.
 
-The files within the `src/` directory work like this:
+Devices can freely emit or listen to events from any other device, without knowledge of other devices.
 
-- **`devices/*.ts`**: where device events, device methods, and other data are defined
-  - Griffin PowerMate (press/rotation events; `setLed()` method)
-  - Senic Nuimo Control (press/rotation events; methods like `connect()` or `displayGlyph()`; Glyphs)
-  - Sonos (play/pause/group events; media control methods; some extra data for `isPlaying` or `isGrouped`)
-  - ~~blink(1)~~
-- **`index.ts`**: where device events are mapped to device methods
-  - Map PowerMate input events to Sonos methods
-  - Map Nuimo input events to Sonos methods
-  - Map Sonos play/pause events to PowerMate LED (i.e. turn on PowerMate LED when Sonos is playing)
-  - Map Nuimo "discovery" state to PowerMate LED pulse (i.e. pulse PowerMate LED when connecting to Nuimo)
-- **`pm2.config.json`**: configuration for running the library in a process manager
-  - pm2
-  - Debug
+### Devices
 
-### Anatomy of a device
+Devices are found in the `src/devices/` directory.
 
 Each device exports:
 
-- a class that represents the device, with methods for device functions (`setLed()`, `play()`, `volumeUp()`, etc.)
-- a list of its events
-- optionally, any other list of data that the index may need when setting up event listeners (ex. Nuimo glyphs)
+- a class that represents the device, with methods for device functions
+- a list of the device's events, which get used in the index file by event listeners (the device class extends `EventEmitter`, so all the events methods come for free)
+- optionally, any other data that the index file may need when setting up event listeners (i.e. Nuimo glyphs)
 
-Each device class extends `EventEmitter`, so it can emit events when something happens (i.e. a device input occurs, the state of a device changes).
+The supported devices (and their exports) are:
 
-A device exports its possible events, which get used in the Index file by event listeners.
+- Griffin PowerMate
+  - input events for press and rotation
+  - method for `setLed()`
+- Senic Nuimo Control
+  - input events for press, rotation, swipe, tap, etc.
+  - methods for `connect()` and `displayGlyph()`
+  - extra data for Glyphs
+- Sonos
+  - events for play/pause/group changes
+  - methods for media control (`play()`, `pause()`, `volumeUp()`, `volumeDown()`, etc.)
+  - extra data for `isPlaying` or `isGrouped`
 
-A device also contains methods pertaining to its functionality (i.e. Sonos has `play()`, `pause()`, etc.; PowerMate has `setLed()`, etc.)
+### Index File
 
-## Problems along the way
+The `src/index.ts` file is where events are mapped to methods
+
+Right now, I map things roughly like this:
+
+- Map PowerMate input events to Sonos methods
+- Map Nuimo input events to Sonos methods
+- Map Sonos play/pause events to PowerMate LED (i.e. turn on PowerMate LED when Sonos is playing)
+- Map Nuimo "discovery" state to PowerMate LED pulse (i.e. pulse PowerMate LED when connecting to Nuimo)
+
+When all laid out on a table, that looks like this:
+
+|                          | PowerMate               | Nuimo                 |
+| ------------------------ | ----------------------- | --------------------- |
+| press                    | Sonos Play/Pause        | Sonos Play/Pause      |
+| double press             | Sonos Next Track        | _(not supported)_     |
+| triple press             | Sonos Previous Track    | _(not supported)_     |
+| clockwise                | Sonos Volume Up         | Sonos Volume Up       |
+| counterclockwise         | Sonos Volume Down       | Sonos Volume Down     |
+| press + clockwise        | Sonos Group Volume Up   | Sonos Group Volume Up |
+| press + counterclockwise | Sonos Group Volume Down | Sonos Group Volume Up |
+| swipe right              | _(not supported)_       | Sonos Next Track      |
+| swipe left               | _(not supported)_       | Sonos Previous Track  |
+| long press               | Reconnect Nuimo         | _(not supported)_     |
+
+### Deployment
+
+I deploy this library by committing changes and pushing the code to GitHub, then using SSH to connect to and pull the changes down to the Raspberry Pi.
+
+The script runs continuously using [`pm2`](https://pm2.keymetrics.io/) and its configuration is in the `pm2.config.json` file.
+
+Throughout the library, I have debug statements to write to log outputs, and I can read the log outputs through pm2.
+
+## Problems
 
 **[TODO: Go through note with the issues]**
 
