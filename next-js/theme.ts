@@ -102,11 +102,11 @@ export default {
       },
       h5: {
         variant: 'text.heading',
-        fontSize: [fontSizes[1], fontSizes[2]],
+        fontSize: [fontSizes[2], fontSizes[3]],
       },
       h6: {
         variant: 'text.heading',
-        fontSize: [fontSizes[0], fontSizes[1]],
+        fontSize: [fontSizes[2], fontSizes[3]],
       },
       // For remark-autolink-headings
       '.anchor-link': {
