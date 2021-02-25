@@ -122,6 +122,8 @@ export default {
         borderRadius: 'default',
         color: 'primary',
         padding: space[1],
+        fontFamily: 'monospace',
+        fontSize: fontSizes[0],
       },
       blockquote: {
         backgroundColor: 'highlight',
