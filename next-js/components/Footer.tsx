@@ -42,6 +42,18 @@ export const Footer = (props: { sx?: SxProps }) => {
                 hi@andrewwestling.com
               </Link>
             </Text>
+          </Box>
+          <Box>
+            <Text variant="footer">
+              <NextLink href="/" passHref>
+                <Link>Home</Link>
+              </NextLink>
+            </Text>
+            <Text variant="footer">
+              <NextLink href="/media-cube" passHref>
+                <Link>Media Cube</Link>
+              </NextLink>
+            </Text>
             <Text variant="footer">
               <NextLink href="/resume" passHref>
                 <Link>Resume</Link>
