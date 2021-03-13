@@ -123,6 +123,11 @@ export default {
         color: 'primary',
         padding: space[1],
       },
+      ul: {
+        p: {
+          margin: 0,
+        },
+      },
     },
     a: {
       color: 'inherit',
