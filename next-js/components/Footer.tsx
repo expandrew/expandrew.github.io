@@ -59,6 +59,11 @@ export const Footer = (props: { sx?: SxProps }) => {
                 <Link>Resume</Link>
               </NextLink>
             </Text>
+            <Text variant="footer">
+              <NextLink href="/uses" passHref>
+                <Link>Uses</Link>
+              </NextLink>
+            </Text>
             <Text variant="footer" sx={{ a: { color: 'highlight' } }}>
               <NextLink href="/awds" passHref>
                 <Link>AWDS</Link>
