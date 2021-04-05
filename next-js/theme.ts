@@ -1,11 +1,10 @@
 const fontSizes = [
   '0.800rem',
   '1.000rem',
-  '1.125rem',
-  '1.275rem',
-  '1.450rem',
-  '1.600rem',
+  '1.250rem',
+  '1.500rem',
   '2.000rem',
+  '2.500rem',
 ];
 
 const space = [
@@ -86,27 +85,27 @@ export default {
       fontWeight: 'body',
       h1: {
         variant: 'text.heading',
-        fontSize: [fontSizes[5], fontSizes[6]],
+        fontSize: [fontSizes[4], fontSizes[5]],
       },
       h2: {
         variant: 'text.heading',
-        fontSize: [fontSizes[4], fontSizes[5]],
+        fontSize: [fontSizes[3], fontSizes[4]],
       },
       h3: {
         variant: 'text.heading',
-        fontSize: [fontSizes[3], fontSizes[4]],
+        fontSize: [fontSizes[2], fontSizes[3]],
       },
       h4: {
         variant: 'text.heading',
-        fontSize: [fontSizes[2], fontSizes[3]],
+        fontSize: [fontSizes[1], fontSizes[2]],
       },
       h5: {
         variant: 'text.heading',
-        fontSize: [fontSizes[2], fontSizes[3]],
+        fontSize: [fontSizes[1], fontSizes[2]],
       },
       h6: {
         variant: 'text.heading',
-        fontSize: [fontSizes[2], fontSizes[3]],
+        fontSize: [fontSizes[1], fontSizes[2]],
       },
       // For remark-autolink-headings
       '.anchor-link': {
