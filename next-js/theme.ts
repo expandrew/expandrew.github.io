@@ -21,6 +21,7 @@ const space = [
 
 export default {
   useColorSchemeMediaQuery: true,
+  useLocalStorage: false,
   breakpoints: ['40rem'],
   fonts: {
     body: 'system-ui, sans-serif',
