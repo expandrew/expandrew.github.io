@@ -1,3 +1,5 @@
+import { Z_BLOCK } from 'node:zlib';
+
 const fontSizes = [
   '0.800rem',
   '1.000rem',
@@ -72,6 +74,7 @@ export default {
     footer: {
       lineHeight: 2,
       fontSize: fontSizes[0],
+      display: 'block',
     },
     default: {
       fontSize: fontSizes[1],

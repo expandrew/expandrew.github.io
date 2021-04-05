@@ -1,10 +1,10 @@
 //@jsx jsx
 import NextImage from 'next/image';
 import NextLink from 'next/link';
-import { jsx, Box, Container, Flex, Link, Text, SxProps } from 'theme-ui';
+import { jsx, Box, Container, Flex, Link, Text, SxProp } from 'theme-ui';
 import { DarkModeToggle } from './DarkModeToggle';
 
-export const Header = (props: { sx?: SxProps }) => (
+export const Header = (props: { sx?: SxProp }) => (
   <header
     role="banner"
     sx={{
