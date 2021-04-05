@@ -1,13 +1,10 @@
 // @jsx jsx
 import NextApp from 'next/app';
 import Head from 'next/head';
-import NextImage from 'next/image';
-import NextLink from 'next/link';
 import * as React from 'react';
-import { jsx, Box, Container, Flex, Link, Text, ThemeProvider } from 'theme-ui';
-import { DarkModeToggle } from '../components/DarkModeToggle';
-import { Header } from '../components/Header';
+import { jsx, Container, Flex, ThemeProvider } from 'theme-ui';
 import { Footer } from '../components/Footer';
+import { Header } from '../components/Header';
 import theme from '../theme';
 
 export default class App extends NextApp {

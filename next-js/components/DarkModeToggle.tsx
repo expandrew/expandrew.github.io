@@ -7,6 +7,7 @@ export const DarkModeToggle = () => {
     <IconButton
       title="Toggle dark mode"
       aria-label="Toggle dark mode"
+      sx={{ '&:hover': { cursor: 'pointer' } }}
       onClick={() => {
         setColorMode(colorMode === 'default' ? 'dark' : 'default');
       }}

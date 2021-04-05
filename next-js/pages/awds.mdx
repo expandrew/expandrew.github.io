@@ -57,8 +57,10 @@ export const Colors = () => {
             }}
           />
           <Box>
-            <Text>{color}</Text>
-            <Text variant="label">{theme.colors[color]}</Text>
+            <Text as="div">{color}</Text>
+            <Text as="div" variant="label">
+              {theme.rawColors[color]}
+            </Text>
           </Box>
         </Grid>
       ))}

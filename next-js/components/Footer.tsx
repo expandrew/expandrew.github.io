@@ -1,6 +1,6 @@
 //@jsx jsx
 import NextLink from 'next/link';
-import { jsx, Box, Container, Grid, Link, SxProps, Text } from 'theme-ui';
+import { jsx, Box, Container, Grid, Link, SxProp, Text } from 'theme-ui';
 
 const socialAccounts = {
   github: {
@@ -29,7 +29,7 @@ const socialAccounts = {
   },
 };
 
-export const Footer = (props: { sx?: SxProps }) => {
+export const Footer = (props: { sx?: SxProp }) => {
   return (
     <footer sx={{ variant: 'styles.footer', ...props.sx }}>
       <Container>

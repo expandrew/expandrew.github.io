@@ -1,3 +1,5 @@
+import { Theme } from 'theme-ui';
+
 const fontSizes = [
   '0.800rem',
   '1.000rem',
@@ -17,8 +19,9 @@ const space = [
   '8.000rem',
 ];
 
-export default {
+const theme: Theme = {
   useColorSchemeMediaQuery: true,
+  useLocalStorage: false,
   breakpoints: ['40rem'],
   fonts: {
     body: 'system-ui, sans-serif',
@@ -72,6 +75,7 @@ export default {
     footer: {
       lineHeight: 2,
       fontSize: fontSizes[0],
+      display: 'block',
     },
     default: {
       fontSize: fontSizes[1],
@@ -160,3 +164,5 @@ export default {
     },
   },
 };
+
+export default theme;
