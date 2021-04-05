@@ -1,4 +1,4 @@
-import { Z_BLOCK } from 'node:zlib';
+import { Theme } from 'theme-ui';
 
 const fontSizes = [
   '0.800rem',
@@ -19,7 +19,7 @@ const space = [
   '8.000rem',
 ];
 
-export default {
+const theme: Theme = {
   useColorSchemeMediaQuery: true,
   useLocalStorage: false,
   breakpoints: ['40rem'],
@@ -164,3 +164,5 @@ export default {
     },
   },
 };
+
+export default theme;
